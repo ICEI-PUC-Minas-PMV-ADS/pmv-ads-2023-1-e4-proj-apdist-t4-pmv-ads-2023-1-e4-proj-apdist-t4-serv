@@ -4,9 +4,9 @@
 
 `Projeto: Desenvolvimento de uma Aplicação Distribuída`
 
-`Eixo 4`
+`Quarto período`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+<p align="justify">O objetivo geral deste trabalho é a criação de solução tecnológica que visa aproximar os usuários que queiram contratar serviços domésticos aos profissionais cadastrados, oferecendo-lhes vários orçamentos para que possam escolher a melhor opção.</p>
 
 ## Integrantes
 
