@@ -1,6 +1,6 @@
-# Introdução
+<h1>Introdução</h1>
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+<p>Projeto surgiu, com a ideia de suprir uma lacuna nos lares da atualidade, onde temos lares somente de mulheres, a qual necessitam de serviços diversos em suas residências. Como por exemplo uma conserto no encanamento, limpeza e instalação de um ar-condicionao, pintura, montagem de móveis, entre outros tipos de serviços ou manutenção. Em algumas situações são necessários serviços especializados, exigindo, assim, a contratação de um profissional qualificado e reconhecido pelo bom serviço. Por outro lado, existem fornecedores de serviços que desejam aumentar a sua clientela. Por isso buscam anunciar os seus serviços em sites e ferramentas que visam aproximar os potenciais clientes de sua região. Diante desta perspectiva, queremos criar um aplicativo web app em que os fornecedores possam se cadastrar e oferecer os seus serviços. Da mesma, os usuários que precisam de um serviço para o seu lar, poderiam se cadastrar e localizar os profissionais que poderiam atendê-las. </p>
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
