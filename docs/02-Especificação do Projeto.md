@@ -217,6 +217,8 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 
 ## Gestão de Orçamento
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
+A matriz de orçamento mostra as principais tarefas do projeto, os recursos necessários para cada tarefa, o custo por hora de cada recurso, as horas necessárias para cada tarefa e o custo total de cada tarefa. O total de todas as tarefas é apresentado no final da tabela.
 
-![Orçamento](img/02-orcamento.png)
+É importante lembrar que essa é apenas uma estimativa de custos e que os custos reais podem variar dependendo de vários fatores, como a complexidade do projeto, o número de recursos necessários, o tempo necessário para cada tarefa e outros fatores que podem influenciar o custo final do projeto.
+
+![Orçamento](img/matriz de orçamento.jpeg)
