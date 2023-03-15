@@ -13,11 +13,11 @@ Para os fornecedores de serviços, a aplicação pode oferecer uma oportunidade 
 ## Persona 1 Nome: Ana Silva
 ![Persona Ana](img/Ana.jpeg)
 - Idade: 35 anos
-- Ocupação: Empresária.
-<p Ana é uma mulher ocupada, que tem pouco tempo para cuidar da casa e precisa se concentrar em sua carreira e em seus filhos.
+- Ocupação: Empresária.</p>
+ Ana é uma mulher ocupada, que tem pouco tempo para cuidar da casa e precisa se concentrar em sua carreira e em seus filhos.
 Ela precisa de um profissional qualificado e confiável para consertar a torneira que está vazando na cozinha.
 Ana acessa o aplicativo, pesquisa por serviços de encanamento em sua região, verifica as avaliações de outros usuários e agenda uma visita do prestador de serviços para o dia seguinte.
-O prestador de serviços chega no horário marcado, realiza o conserto com rapidez e eficiência, e Ana paga pelo serviço diretamente pelo aplicativo.</p>
+O prestador de serviços chega no horário marcado, realiza o conserto com rapidez e eficiência, e Ana paga pelo serviço diretamente pelo aplicativo.
 
 ## Persona 2 Nome: João Cardoso
 ![Persona João](img/João.jpeg)
