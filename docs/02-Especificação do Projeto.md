@@ -28,7 +28,7 @@ Ele acessa o aplicativo, pesquisa por serviços de montagem de móveis e instala
 O prestador de serviços chega no horário marcado, monta todos os móveis de João com rapidez e habilidade, e instala o ar-condicionado sem nenhum problema.
 João avalia positivamente o serviço prestado e paga pelo serviço diretamente pelo aplicativo, com segurança e praticidade.
 
-## Persona 3 Nome: Maria
+## Persona 3 Nome: Maria Nunes
 ![Persona Maria](img/Maria.jpeg)
 - Idade: 60 anos
 - Ocupação: Aposentada.</p>
