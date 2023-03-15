@@ -2,13 +2,59 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+È possível definir o problema de forma mais específica a partir da perspectiva do usuário. Por exemplo, a persona Ana, uma mãe solteira que trabalha em tempo integral, enfrenta dificuldades em encontrar tempo e energia para lidar com a manutenção da sua casa. Ana precisa de serviços diversos em sua residência, mas muitas vezes não sabe a quem recorrer ou não tem confiança nos profissionais disponíveis em sua região.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Já a persona Marcela, uma mulher aposentada que mora sozinha, pode enfrentar problemas semelhantes. Ela tem mais tempo disponível do que Ana, mas pode ter dificuldades físicas para lidar com certos serviços de manutenção em sua casa, como consertos de encanamento ou limpeza de ar-condicionado. Além disso, Marcela pode ser mais receosa em relação à contratação de profissionais desconhecidos.
+
+A ideia de solução proposta pela aplicação é oferecer uma plataforma digital conveniente e prática para conectar usuários como Ana e Marcela a profissionais qualificados e reconhecidos em sua região. Os usuários podem buscar os serviços que precisam na plataforma e encontrar profissionais de confiança, com avaliações e feedbacks de outros usuários. Dessa forma, a aplicação ajuda a reduzir a incerteza e a insegurança que muitos usuários enfrentam ao contratar profissionais desconhecidos.
+
+Para os fornecedores de serviços, a aplicação pode oferecer uma oportunidade de expandir seus negócios e encontrar novos clientes em sua região, aumentando assim sua visibilidade e lucratividade. A aplicação também pode ajudar a reduzir a complexidade da busca por novos clientes, permitindo que os fornecedores se concentrem em fornecer serviços de alta qualidade para seus clientes existentes.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+## Persona 1 Nome: Ana, 35 anos, mãe solteira e empresária
+![Persona Ana](img/)
+
+Ana é uma mulher ocupada, que tem pouco tempo para cuidar da casa e precisa se concentrar em sua carreira e em seus filhos.
+Ela precisa de um profissional qualificado e confiável para consertar a torneira que está vazando na cozinha.
+Ana acessa o aplicativo, pesquisa por serviços de encanamento em sua região, verifica as avaliações de outros usuários e agenda uma visita do prestador de serviços para o dia seguinte.
+O prestador de serviços chega no horário marcado, realiza o conserto com rapidez e eficiência, e Ana paga pelo serviço diretamente pelo aplicativo.
+
+## Persona 2 Nome: João, 28 anos, estudante universitário
+![Persona João](img/)
+
+João é um jovem que acabou de se mudar para um apartamento alugado e precisa de ajuda para montar seus móveis e instalar o ar-condicionado.
+Ele acessa o aplicativo, pesquisa por serviços de montagem de móveis e instalação de ar-condicionado em sua região, seleciona o prestador de serviços mais bem avaliado e agenda uma visita para o final de semana.
+O prestador de serviços chega no horário marcado, monta todos os móveis de João com rapidez e habilidade, e instala o ar-condicionado sem nenhum problema.
+João avalia positivamente o serviço prestado e paga pelo serviço diretamente pelo aplicativo, com segurança e praticidade.
+
+## Persona 3 Nome: Maria, 60 anos, aposentada
+![Persona Maria](img/)
+
+Maria é uma senhora que mora sozinha e precisa de ajuda para realizar algumas tarefas domésticas, como limpeza e jardinagem.
+Ela acessa o aplicativo, pesquisa por serviços de limpeza e jardinagem em sua região, seleciona o prestador de serviços mais bem avaliado e agenda uma visita para o próximo sábado.
+O prestador de serviços chega no horário marcado, realiza a limpeza da casa e do jardim com cuidado e eficiência, e Maria fica muito satisfeita com o resultado.
+Ela avalia positivamente o serviço prestado e paga pelo serviço diretamente pelo aplicativo, com segurança e praticidade.
+
+## Persona 4 Nome: Rafael, 40 anos, empresário
+![Rafael](img/)
+
+Rafael é um homem ocupado, que viaja com frequência a trabalho e precisa de uma pessoa de confiança para cuidar de sua casa e de seus animais de estimação quando está ausente.
+Ele acessa o aplicativo, pesquisa por serviços de cuidador de animais e de casa em sua região, verifica as avaliações de outros usuários e encontra um prestador de serviços que se encaixa em suas necessidades.
+O prestador de serviços visita a casa de Rafael antes de sua próxima viagem, para conhecer os animais e as tarefas a serem realizadas, e fica responsável por cuidar da casa e dos animais enquanto ele está fora.
+Rafael avalia positivamente o serviço prestado e paga pelo serviço diretamente pelo aplicativo, com segurança e praticidade.
+
+## Persona 5 Nome: Tiago, 25 anos, estudante universitário
+![Persona Tiago](img/)
+
+Tiago é um jovem que mora em uma república com outros estudantes e precisa de um profissional qualificado para consertar a máquina de lavar que está quebrada.
+Ele acessa o aplicativo, pesquisa por serviços de manutenção de eletrodomésticos em sua região, verifica as avaliações de outros usuários e encontra um prestador de serviços com experiência nesse tipo de reparo.
+O prestador de serviços chega no horário marcado, analisa a máquina de lavar e consegue consertá-la rapidamente, sem nenhum problema.
+Tiago avalia positivamente o serviço prestado e paga pelo serviço diretamente pelo aplicativo, com segurança e praticidade.
+
+As histórias de usuário acima demonstram como a aplicação pode ajudar pessoas de diferentes perfis e necessidades a encontrarem profissionais qualificados e confiáveis para realizar serviços de manutenção e reparos em suas casas, de forma rápida, fácil e segura.
+
+
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
