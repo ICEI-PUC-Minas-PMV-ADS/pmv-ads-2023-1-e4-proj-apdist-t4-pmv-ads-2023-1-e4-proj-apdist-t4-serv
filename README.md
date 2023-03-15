@@ -24,7 +24,7 @@
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
-# Documentação
+# Documentação.
 
 <ol>
 <li><a href="docs/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
