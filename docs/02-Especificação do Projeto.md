@@ -130,7 +130,7 @@ Com base nos indicadores de desempenho apresentados na matriz, aqui estão algun
 seguinte modelo: 
 
 ![Indicadores de Desempenho](img/indicador-de-desempenho.jpeg)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+
 
 ## Requisitos
 
