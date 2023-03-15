@@ -8,7 +8,7 @@
 
 <p align="justify">O objetivo da aplicação proposta é fornecer uma plataforma digital para conectar fornecedores de serviços qualificados e reconhecidos a usuários que necessitam de serviços diversos em suas residências. Isso permite que os usuários encontrem facilmente profissionais que atendam às suas necessidades específicas, enquanto os fornecedores têm uma oportunidade de expandir seus negócios e alcançar novos clientes.
 
-A aplicação busca atender a uma demanda existente de serviços em residências, especialmente em lares compostos apenas por mulheres que precisam de serviços diversos, desde consertos no encanamento, limpeza e instalação de ar-condicionado, pintura, montagem de móveis, entre outros tipos de serviços ou manutenção.
+A aplicação busca atender a uma demanda existente de serviços em residências, desde consertos no encanamento, limpeza e instalação de ar-condicionado, pintura, montagem de móveis, entre outros tipos de serviços ou manutenção.
 
 Assim, a aplicação visa proporcionar conveniência e praticidade aos usuários, simplificando o processo de busca por profissionais qualificados e de confiança para realizar serviços em suas residências. Além disso, a plataforma também visa ajudar fornecedores de serviços a expandir seus negócios e encontrar novos clientes em sua região, aumentando assim sua visibilidade e lucratividade.</p>
 
