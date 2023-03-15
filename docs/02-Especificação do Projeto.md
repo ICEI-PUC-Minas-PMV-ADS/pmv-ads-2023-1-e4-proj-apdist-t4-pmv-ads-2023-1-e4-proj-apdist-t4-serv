@@ -211,9 +211,15 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+A matriz de gerenciamento de equipe  mostra as principais tarefas do projeto e como a equipe será alocada para cada tarefa. As porcentagens mostram a distribuição de tempo de cada recurso em cada tarefa.
 
-![Simple Project Timeline](img/02-project-timeline.png)
+Por exemplo, na tarefa "Análise de requisitos", espera-se que o desenvolvedor front-end contribua com 30% do tempo, o desenvolvedor back-end com 20% do tempo e o designer de interface com 50% do tempo.
+
+Isso ajuda a garantir que cada membro da equipe seja alocado para tarefas que melhor se adaptem às suas habilidades e experiências, e garante que cada tarefa receba a atenção adequada de recursos qualificados.
+
+Lembrando que essa é apenas uma estimativa de como a equipe pode ser alocada para cada tarefa, e que a alocação real pode variar dependendo da disponibilidade e desempenho da equipe. 
+
+![Simple Project Timeline](img/matriz-de-geranciamento-de-equipe.jpeg)
 
 ## Gestão de Orçamento
 
