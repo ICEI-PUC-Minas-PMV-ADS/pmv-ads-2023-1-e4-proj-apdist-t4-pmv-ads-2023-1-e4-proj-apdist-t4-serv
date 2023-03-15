@@ -40,7 +40,7 @@ A aplicação tem o potencial de oferecer benefícios significativos tanto para 
 5. Pessoas que desejam encontrar fornecedores de serviços de qualidade, com boas avaliações e preços acessíveis.
 
 É importante ressaltar que, mesmo sendo um público-alvo definido, a aplicação pode ser utilizada por qualquer pessoa que esteja em busca de serviços de manutenção e reparos em sua residência, independentemente de gênero, idade ou localização geográfica.
-<h3>Responsáveis pelo gerenciamento e criação da aplicação distribuida (podem ou não ser os mesmos), incluem:</h3>
+<h3>Responsáveis pelo gerenciamento e criação da aplicação (podem ou não ser os mesmos), incluem:</h3>
 <li>Desenvolvedores do aplicativo;</li>
 <li>Pessoas responsáveis pelo gerenciamento do aplicativo, incluindo lucros e despesas que o site possa ter;</li>
 <li>Proprietario do aplicativo;</li>
