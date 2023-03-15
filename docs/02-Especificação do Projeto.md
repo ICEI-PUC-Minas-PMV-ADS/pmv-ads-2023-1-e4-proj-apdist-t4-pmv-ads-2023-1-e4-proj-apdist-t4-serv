@@ -221,4 +221,4 @@ A matriz de orçamento mostra as principais tarefas do projeto, os recursos nece
 
 É importante lembrar que essa é apenas uma estimativa de custos e que os custos reais podem variar dependendo de vários fatores, como a complexidade do projeto, o número de recursos necessários, o tempo necessário para cada tarefa e outros fatores que podem influenciar o custo final do projeto.
 
-![Orçamento](docs/img/matriz de orçamento.jpeg)
+![Orçamento](img/matriz-de-orçamento.jpeg)
