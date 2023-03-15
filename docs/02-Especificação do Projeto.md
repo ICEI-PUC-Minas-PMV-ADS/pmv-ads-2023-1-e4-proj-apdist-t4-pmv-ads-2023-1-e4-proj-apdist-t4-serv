@@ -172,15 +172,22 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001|Cadastro de fornecedores de serviços: os fornecedores de serviços devem poder se cadastrar no aplicativo, fornecendo informações como nome, endereço, telefone, e-mail, especialidades, entre outras.| ALTA | 
+|RF-002|Cadastro de usuários: os usuários devem poder se cadastrar no aplicativo, fornecendo informações como nome, endereço, telefone, e-mail, entre outras.| ALTA |
+|RF-003|Busca de serviços: os usuários devem poder pesquisar serviços disponíveis na sua região, por tipo de serviço, especialidade, avaliação, entre outras opções.| ALTA |
+|RF-004|Agendamento de serviços: os usuários devem poder agendar serviços diretamente pelo aplicativo, escolhendo a data e horário mais convenientes.   | ALTA |
+|RF-005|Avaliação de serviços: os usuários devem poder avaliar os serviços prestados pelos fornecedores, ajudando outros usuários a escolherem o melhor prestador de serviços.| MÉDIA |
+|RF-006|Pagamento online: os usuários devem poder pagar pelos serviços prestados diretamente pelo aplicativo, utilizando cartão de crédito ou outra forma de pagamento online.| ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001|Usabilidade: o aplicativo deve ser fácil e intuitivo de usar, para que os usuários possam encontrar os serviços que precisam de forma rápida e eficiente. | Alta | 
+|RNF-002|Desempenho: o aplicativo deve ser rápido e responsivo, mesmo quando muitos usuários estão acessando simultaneamente. | Alta |
+|RNF-003|Confiabilidade: o aplicativo deve ser confiável e estar disponível 24 horas por dia, 7 dias por semana, para que os usuários possam acessá-lo sempre que precisarem. | Alta | 
+|RNF-004|Segurança: o aplicativo deve ser seguro e proteger as informações pessoais e financeiras dos usuários. | Alta | 
+|RNF-005|Escalabilidade: o aplicativo deve ser capaz de lidar com um grande número de usuários e fornecedores de serviços, sem comprometer o desempenho e a usabilidade. | Alta  | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
