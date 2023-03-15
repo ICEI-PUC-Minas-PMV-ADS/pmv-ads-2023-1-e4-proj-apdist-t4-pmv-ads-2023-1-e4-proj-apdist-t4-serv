@@ -22,7 +22,7 @@ O prestador de serviços chega no horário marcado, realiza o conserto com rapid
 ## Persona 2 Nome: João Cardoso
 ![Persona João](img/João.jpeg)
 - Idade: 28 anos 
-- Ocupação: Estudante universitário.
+- Ocupação: Estudante universitário.</p>
 João é um jovem que acabou de se mudar para um apartamento alugado e precisa de ajuda para montar seus móveis e instalar o ar-condicionado.
 Ele acessa o aplicativo, pesquisa por serviços de montagem de móveis e instalação de ar-condicionado em sua região, seleciona o prestador de serviços mais bem avaliado e agenda uma visita para o final de semana.
 O prestador de serviços chega no horário marcado, monta todos os móveis de João com rapidez e habilidade, e instala o ar-condicionado sem nenhum problema.
@@ -31,7 +31,7 @@ João avalia positivamente o serviço prestado e paga pelo serviço diretamente 
 ## Persona 3 Nome: Maria
 ![Persona Maria](img/Maria.jpeg)
 - Idade: 60 anos
-- Ocupação: Aposentada.
+- Ocupação: Aposentada.</p>
 Maria é uma senhora que mora sozinha e precisa de ajuda para realizar algumas tarefas domésticas, como limpeza e jardinagem.
 Ela acessa o aplicativo, pesquisa por serviços de limpeza e jardinagem em sua região, seleciona o prestador de serviços mais bem avaliado e agenda uma visita para o próximo sábado.
 O prestador de serviços chega no horário marcado, realiza a limpeza da casa e do jardim com cuidado e eficiência, e Maria fica muito satisfeita com o resultado.
@@ -40,7 +40,7 @@ Ela avalia positivamente o serviço prestado e paga pelo serviço diretamente pe
 ## Persona 4 Nome: Rafael Oliveira
 ![Rafael](img/Rafael.jpeg)
 - Idade: 40 anos
-- Ocupação: Empresário.
+- Ocupação: Empresário.</p>
 Rafael é um homem ocupado, que viaja com frequência a trabalho e precisa de uma pessoa de confiança para cuidar de sua casa e de seus animais de estimação quando está ausente.
 Ele acessa o aplicativo, pesquisa por serviços de cuidador de animais e de casa em sua região, verifica as avaliações de outros usuários e encontra um prestador de serviços que se encaixa em suas necessidades.
 O prestador de serviços visita a casa de Rafael antes de sua próxima viagem, para conhecer os animais e as tarefas a serem realizadas, e fica responsável por cuidar da casa e dos animais enquanto ele está fora.
@@ -49,7 +49,7 @@ Rafael avalia positivamente o serviço prestado e paga pelo serviço diretamente
 ## Persona 5 Nome: Tiago Alves
 ![Persona Tiago](img/Tiago.jpeg)
 - Idade: 25 anos
-- Ocupação: Estudante universitário.
+- Ocupação: Estudante universitário.</p>
 Tiago é um jovem que mora em uma república com outros estudantes e precisa de um profissional qualificado para consertar a máquina de lavar que está quebrada.
 Ele acessa o aplicativo, pesquisa por serviços de manutenção de eletrodomésticos em sua região, verifica as avaliações de outros usuários e encontra um prestador de serviços com experiência nesse tipo de reparo.
 O prestador de serviços chega no horário marcado, analisa a máquina de lavar e consegue consertá-la rapidamente, sem nenhum problema.
