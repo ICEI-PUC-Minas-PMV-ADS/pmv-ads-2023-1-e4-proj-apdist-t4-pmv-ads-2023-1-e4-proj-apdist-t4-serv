@@ -1,6 +1,6 @@
 # Especificações do Projeto
 
-È possível definir o problema de forma mais específica a partir da perspectiva do usuário. Por exemplo, a persona Ana, uma mãe solteira que trabalha em tempo integral, enfrenta dificuldades em encontrar tempo e energia para lidar com a manutenção da sua casa. Ana precisa de serviços diversos em sua residência, mas muitas vezes não sabe a quem recorrer ou não tem confiança nos profissionais disponíveis em sua região.
+È possível definir o problema de forma mais específica a partir da perspectiva do usuário. Por exemplo, a persona Ana, solteira que trabalha em tempo integral, enfrenta dificuldades em encontrar tempo e energia para lidar com a manutenção da sua casa. Ana precisa de serviços diversos em sua residência, mas muitas vezes não sabe a quem recorrer ou não tem confiança nos profissionais disponíveis em sua região.
 
 Já a persona Maria, uma mulher aposentada que mora sozinha, pode enfrentar problemas semelhantes. Ela tem mais tempo disponível do que Ana, mas pode ter dificuldades físicas para lidar com certos serviços de manutenção em sua casa, como consertos de encanamento ou limpeza de ar-condicionado. Além disso, Maria pode ser mais receosa em relação à contratação de profissionais desconhecidos.
 
