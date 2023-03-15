@@ -10,7 +10,7 @@
 
 ## Integrantes
 
-* Mário César de Souza Fernandes2
+* Mário César de Souza Fernandes
 * Marcelo dos Santos Farias
 * Márcia Maria de Paula Ferreira
 * Ruver Clacyus Oliveira Caldeira
