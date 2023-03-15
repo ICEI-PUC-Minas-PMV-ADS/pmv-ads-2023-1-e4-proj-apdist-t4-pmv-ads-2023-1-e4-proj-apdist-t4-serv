@@ -1,41 +1,45 @@
 <h1>Introdução</h1>
 
-<p>Projeto surgiu, com a ideia de suprir uma lacuna nos lares da atualidade, onde temos lares somente de mulheres, a qual necessitam de serviços diversos em suas residências. Como por exemplo uma conserto no encanamento, limpeza e instalação de um ar-condicionao, pintura, montagem de móveis, entre outros tipos de serviços ou manutenção. Em algumas situações são necessários serviços especializados, exigindo, assim, a contratação de um profissional qualificado e reconhecido pelo bom serviço. Por outro lado, existem fornecedores de serviços que desejam aumentar a sua clientela. Por isso buscam anunciar os seus serviços em sites e ferramentas que visam aproximar os potenciais clientes de sua região. Diante desta perspectiva, queremos criar um aplicativo web app em que os fornecedores possam se cadastrar e oferecer os seus serviços. Da mesma, os usuários que precisam de um serviço para o seu lar, poderiam se cadastrar e localizar os profissionais que poderiam atendê-las. </p>
+<p>O projeto surgiu com a ideia de suprir uma lacuna nos lares da atualidade, onde existem muitas mulheres que vivem sozinhas e necessitam de serviços diversos em suas residências. Segundo dados do IBGE, em 2021, as mulheres já são maioria nos lares brasileiros e representam cerca de 44% dos domicílios brasileiros. Essas mulheres muitas vezes precisam de serviços como consertos de encanamento, instalação de ar-condicionado, pintura, montagem de móveis, entre outros tipos de serviços ou manutenções. Porém, como muitas delas não possuem conhecimento técnico nessas áreas, é necessário contratar profissionais qualificados e reconhecidos pela qualidade do serviço prestado.
+
+Por outro lado, existe uma crescente demanda por serviços especializados, o que representa uma oportunidade para os profissionais que desejam aumentar sua clientela. De acordo com a consultoria EY, em 2021, houve um aumento significativo na contratação de serviços especializados em todo o mundo, principalmente na área de reformas e construção civil.
+
+Com base nessa perspectiva, o projeto propõe a criação de um aplicativo web em que os fornecedores de serviços possam se cadastrar e oferecer seus serviços. O uso de plataformas digitais para conectar profissionais e clientes tem sido uma tendência crescente nos últimos anos, e a pandemia da Covid-19 acelerou ainda mais essa transformação digital. Segundo dados do Sebrae, em 2020, as vendas online no Brasil cresceram 47%, enquanto o comércio físico registrou uma queda de 6%.
+
+Com o aplicativo proposto, os usuários poderão se cadastrar e localizar os profissionais que possam atendê-los, com base em sua localização e nas avaliações feitas por outros clientes. Além disso, o aplicativo poderá oferecer outras funcionalidades, como agendamento de serviços, pagamento online, entre outros recursos que possam facilitar a vida dos usuários e dos profissionais cadastrados. </p>
 
 <h2>Problema</h2>
-<p>Conforme exposto, o problema que se busca resolver com este projeto é a aproximação dos usuários aos fornecedores de serviços de forma fácil, ágil e segura.</p>
+<p>O problema que a aplicação proposta busca resolver é a lacuna existente nos lares da atualidade, especialmente nos lares compostos apenas por mulheres, que muitas vezes precisam de serviços diversos em suas residências, mas têm dificuldade em encontrar profissionais qualificados e confiáveis para realizá-los.
 
+Além disso, muitos fornecedores de serviços também enfrentam problemas para encontrar novos clientes e expandir seus negócios, especialmente em um mercado competitivo. A aplicação busca, portanto, solucionar esse problema conectando fornecedores de serviços qualificados e reconhecidos a usuários que necessitam de serviços diversos em suas residências, oferecendo uma plataforma digital conveniente e prática para ambas as partes.</p>
 
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo da aplicação proposta é fornecer uma plataforma digital para conectar fornecedores de serviços qualificados e reconhecidos a usuários que necessitam de serviços diversos em suas residências. Isso permite que os usuários encontrem facilmente profissionais que atendam às suas necessidades específicas, enquanto os fornecedores têm uma oportunidade de expandir seus negócios e alcançar novos clientes.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+A aplicação busca atender a uma demanda existente de serviços em residências, especialmente em lares compostos apenas por mulheres que precisam de serviços diversos, desde consertos no encanamento, limpeza e instalação de ar-condicionado, pintura, montagem de móveis, entre outros tipos de serviços ou manutenção.
+
+Assim, a aplicação visa proporcionar conveniência e praticidade aos usuários, simplificando o processo de busca por profissionais qualificados e de confiança para realizar serviços em suas residências. Além disso, a plataforma também visa ajudar fornecedores de serviços a expandir seus negócios e encontrar novos clientes em sua região, aumentando assim sua visibilidade e lucratividade.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A aplicação tem o potencial de oferecer benefícios significativos tanto para usuários quanto para fornecedores de serviços. Para usuários, a aplicação oferece a comodidade de encontrar rapidamente profissionais qualificados e de confiança para realizar serviços em suas residências, economizando tempo e esforço. Já para fornecedores de serviços, a aplicação pode ser uma oportunidade de expandir seus negócios e encontrar novos clientes em sua região, aumentando assim sua visibilidade e lucratividade.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+1. Mulheres que residem sozinhas ou com outras mulheres e necessitam de serviços diversos em suas residências.
+
+2. Homens e mulheres que precisam contratar serviços de manutenção ou reparos em suas casas ou apartamentos.
+
+3. Pessoas que desejam terceirizar tarefas domésticas, como limpeza, jardinagem, entre outras.
+
+4. Profissionais autônomos ou empresas que prestam serviços de manutenção, reparos ou tarefas domésticas.
+
+5. Pessoas que desejam encontrar fornecedores de serviços de qualidade, com boas avaliações e preços acessíveis.
+
+É importante ressaltar que, mesmo sendo um público-alvo definido, a aplicação pode ser utilizada por qualquer pessoa que esteja em busca de serviços de manutenção e reparos em sua residência, independentemente de gênero, idade ou localização geográfica.
 
 Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
