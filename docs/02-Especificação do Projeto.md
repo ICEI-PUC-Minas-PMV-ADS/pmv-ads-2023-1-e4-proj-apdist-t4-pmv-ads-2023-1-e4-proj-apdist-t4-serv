@@ -93,11 +93,43 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Nos dias de hoje, a busca por profissionais para prestação de serviços com qualidade e rapidez pode ser uma tarefa desafiadora. Nesse sentido, uma aplicação para conectar clientes e profissionais pode ser uma excelente solução para otimizar e agilizar esse processo.
+
+Com a aplicação, é possível que o cliente solicite serviços de forma mais prática e personalizada, especificando suas necessidades e recebendo indicações de profissionais qualificados. A aplicação pode permitir que o cliente visualize o perfil do profissional, suas habilidades e qualificações, bem como as avaliações de outros clientes que já utilizaram seus serviços.
+
+Além disso, a aplicação pode oferecer funcionalidades como agendamento de horários, pagamento online e acompanhamento do serviço prestado, tudo de forma integrada e prática. Isso permite que o cliente tenha maior controle sobre o serviço contratado, e que o profissional possa prestar um serviço de qualidade com mais eficiência e rapidez.
+
+Outro benefício de uma aplicação para conectar clientes e profissionais é a possibilidade de fidelizar clientes e criar novas oportunidades de negócios para os profissionais cadastrados. A aplicação pode oferecer programas de fidelidade e recompensas para clientes que utilizam o serviço com frequência, bem como oportunidades de crescimento e qualificação para os profissionais que prestam serviços de qualidade.
+
+Por fim, a criação de uma aplicação para conectar clientes e profissionais também pode ser vista como uma oportunidade de inovação e diferenciação no mercado. Empresas que oferecem uma solução eficaz e inovadora para conectar clientes e profissionais tendem a ter uma vantagem competitiva e a atrair mais negócios.
+
+
+
+ 
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+A modelagem do processo de negócio da aplicação pode ser representada pelo seguinte diagrama de fluxo de processo:
+
+- Cadastro de Usuário: o processo se inicia com o cadastro do usuário no aplicativo, informando nome completo, endereço, e-mail e senha.
+
+- Busca de Serviços: o usuário pode buscar por serviços disponíveis no aplicativo, informando sua localização e tipo de serviço desejado.
+
+- Seleção de Prestador: após a busca, o usuário pode selecionar um prestador de serviços a partir das informações disponíveis no aplicativo, como avaliações de outros usuários, fotos e descrição dos serviços prestados.
+
+- Solicitação de Serviço: o usuário pode solicitar o serviço selecionado pelo prestador de serviços, informando o dia e horário desejados para o atendimento.
+
+- Confirmação do Serviço: o prestador de serviços recebe a solicitação do usuário e pode confirmar ou não a prestação do serviço, informando o dia e horário para o atendimento.
+
+- Atendimento ao Usuário: o prestador de serviços comparece ao endereço indicado pelo usuário e realiza o serviço solicitado.
+
+- Avaliação do Serviço: após o atendimento, o usuário pode avaliar o serviço prestado pelo prestador, atribuindo uma nota e um comentário.
+
+- Pagamento do Serviço: o usuário pode realizar o pagamento do serviço prestado pelo prestador diretamente pelo aplicativo.
+
+- Registro do Pagamento: após o pagamento, o aplicativo registra a transação e envia um comprovante de pagamento para o usuário e para o prestador de serviços.
+
+- Fim do Processo: com a conclusão do pagamento, o processo é finalizado.
 
 ### Processo 1 – NOME DO PROCESSO
 
