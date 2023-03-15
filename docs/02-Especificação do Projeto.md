@@ -13,7 +13,7 @@ Para os fornecedores de serviços, a aplicação pode oferecer uma oportunidade 
 ## Personas
 
 ## Persona 1 Nome: Ana, 35 anos, mãe solteira e empresária
-![Persona Ana](img/)
+![Persona Ana](img/Ana.jpeg)
 
 Ana é uma mulher ocupada, que tem pouco tempo para cuidar da casa e precisa se concentrar em sua carreira e em seus filhos.
 Ela precisa de um profissional qualificado e confiável para consertar a torneira que está vazando na cozinha.
