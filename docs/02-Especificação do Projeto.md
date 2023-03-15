@@ -113,11 +113,23 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
+Com base nos indicadores de desempenho apresentados na matriz, aqui estão alguns argumentos técnicos que podem ser usados para avaliar o desempenho do software:
 
-Usar o seguinte modelo: 
+- Tempo de resposta: Um tempo de resposta rápido é importante para garantir uma boa experiência do usuário e aumentar a eficiência da interação com o sistema. Além disso, uma resposta rápida pode ser essencial em cenários críticos, como transações financeiras ou processos de emergência.
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
+- Taxa de erros: Uma taxa de erros baixa indica que o software é robusto e confiável, resultando em menos interrupções no fluxo de trabalho do usuário e menor necessidade de suporte técnico. Também é importante lembrar que erros em algumas áreas do software, como a segurança, podem ter consequências graves para a organização.
+
+- Disponibilidade: O software deve estar disponível quando necessário para garantir que as tarefas possam ser realizadas e os prazos cumpridos. Uma baixa disponibilidade pode causar perda de produtividade, insatisfação do usuário e possivelmente impactar negativamente o negócio como um todo.
+
+- Escalabilidade: Um software escalável é importante para lidar com a expansão dos negócios ou um aumento na carga de trabalho. Sem escalabilidade, o desempenho pode diminuir drasticamente, resultando em uma experiência ruim do usuário e possivelmente perda de receita.
+
+- Conformidade com padrões: O cumprimento de padrões de segurança e regulamentações é importante para proteger a organização e seus usuários de ameaças externas e garantir conformidade legal. A falha em atender a esses padrões pode resultar em multas, perda de confiança do cliente e perda de negócios.
+
+- Satisfação do usuário: A satisfação do usuário é um indicador importante do valor que o software oferece para a organização. Um alto nível de satisfação do usuário pode resultar em maior produtividade, menor rotatividade de funcionários e, potencialmente, maior receita. Além disso, a insatisfação do usuário pode ser um indicador de problemas em outros indicadores, como tempo de resposta ou taxa de erros. 
+
+seguinte modelo: 
+
+![Indicadores de Desempenho](img/indicador-de-desempenho.jpeg)
 Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
 
 ## Requisitos
