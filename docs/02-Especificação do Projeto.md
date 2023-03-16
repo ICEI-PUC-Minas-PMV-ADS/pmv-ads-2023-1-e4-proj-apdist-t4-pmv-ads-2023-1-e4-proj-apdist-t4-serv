@@ -77,8 +77,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Ana Silva       |Desejo uma ferramenta para encontrar prestadores de serviços de Para solucionar um problema na instalação Hidráulica |Ana é uma mulher ocupada, que tem pouco tempo para cuidar da casa e precisa se concentrar em sua carreira e em seus filhos. Ela precisa de um profissional qualificado e confiável para consertar a torneira que está vazando na cozinha. |
+|João Cardoso    |Desejo uma ferramenta para encontrar prestadores de serviços de montagem de móveis e instalação de ar-condicionado em sua região|João é um jovem que acabou de se mudar para um apartamento alugado e precisa de ajuda para montar seus móveis e instalar o ar-condicionado. |
+|Maria Nunes     |Desejo uma ferramenta para encontrar prestadores de serviços de  limpeza e jardinagem em sua região|Maria é uma senhora que mora sozinha e precisa de ajuda para realizar algumas tarefas domésticas, como limpeza e jardinagem. |
+|Rafael Oliveira |Desejo uma ferramenta para encontrar prestadores de serviços de cuidador de animais e de casa em sua região |Rafael é um homem ocupado, que viaja com frequência a trabalho e precisa de uma pessoa de confiança para cuidar de sua casa e de seus animais de estimação quando está ausente.|
+|Tiago Alves     |Desejo uma ferramenta para encontrar prestadores de serviços de manutenção de eletrodomésticos em sua região |Tiago é um jovem que mora em uma república com outros estudantes e precisa de um profissional qualificado para consertar a máquina de lavar que está quebrada. |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
