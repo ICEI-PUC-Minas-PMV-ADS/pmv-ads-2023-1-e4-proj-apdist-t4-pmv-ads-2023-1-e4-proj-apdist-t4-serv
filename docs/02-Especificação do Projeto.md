@@ -111,17 +111,17 @@ Por fim, a criação de uma aplicação para conectar clientes e profissionais t
 
 A modelagem do processo de negócio da aplicação pode ser representada pelo seguinte diagrama de fluxo de processo:
 
-- 1. Cadastro de fornecedores de serviços: os fornecedores de serviços devem poder se cadastrar no aplicativo, fornecendo informações como nome, endereço, telefone, e-mail, especialidades, entre outras.
-- 
-- 2. Cadastro de Usuário: o processo se inicia com o cadastro do usuário no aplicativo, informando nome completo, endereço, e-mail e senha.
+-1. Cadastro de fornecedores de serviços: os fornecedores de serviços devem poder se cadastrar no aplicativo, fornecendo informações como nome, endereço, telefone, e-mail, especialidades, entre outras.
 
-- 3. Busca de Serviços: o usuário pode buscar por serviços disponíveis no aplicativo, informando sua localização e tipo de serviço desejado.
+-2. Cadastro de Usuário: o processo se inicia com o cadastro do usuário no aplicativo, informando nome completo, endereço, e-mail e senha.
 
-- 4. Seleção de Prestador: após a busca, o usuário pode selecionar um prestador de serviços a partir das informações disponíveis no aplicativo, como avaliações de outros usuários, fotos e descrição dos serviços prestados.
+-3. Busca de Serviços: o usuário pode buscar por serviços disponíveis no aplicativo, informando sua localização e tipo de serviço desejado.
 
-- 5. Solicitação de Serviço: o usuário pode solicitar o serviço selecionado pelo prestador de serviços, informando o dia e horário desejados para o atendimento.
+-4. Seleção de Prestador: após a busca, o usuário pode selecionar um prestador de serviços a partir das informações disponíveis no aplicativo, como avaliações de outros usuários, fotos e descrição dos serviços prestados.
 
-- 6. Confirmação do Serviço: o prestador de serviços recebe a solicitação do usuário e pode confirmar ou não a prestação do serviço, informando o dia e horário para o atendimento.
+-5. Solicitação de Serviço: o usuário pode solicitar o serviço selecionado pelo prestador de serviços, informando o dia e horário desejados para o atendimento.
+
+-6. Confirmação do Serviço: o prestador de serviços recebe a solicitação do usuário e pode confirmar ou não a prestação do serviço, informando o dia e horário para o atendimento.
 
 -7.  Atendimento ao Usuário: o prestador de serviços comparece ao endereço indicado pelo usuário e realiza o serviço solicitado.
 
