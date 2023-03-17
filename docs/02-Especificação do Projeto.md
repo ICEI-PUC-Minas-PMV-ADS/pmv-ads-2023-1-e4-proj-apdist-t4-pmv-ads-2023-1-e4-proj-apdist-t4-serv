@@ -157,7 +157,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-003|Busca de serviços: os usuários devem poder pesquisar serviços disponíveis na sua região, por tipo de serviço, especialidade, avaliação, entre outras opções.| ALTA |
 |RF-004|Agendamento de serviços: os usuários devem poder agendar serviços diretamente pelo aplicativo, escolhendo a data e horário mais convenientes.   | ALTA |
 |RF-005|Avaliação de serviços: os usuários devem poder avaliar os serviços prestados pelos fornecedores, ajudando outros usuários a escolherem o melhor prestador de serviços.| MÉDIA |
-|RF-006|Pagamento online: os usuários devem poder pagar pelos serviços prestados diretamente pelo aplicativo, utilizando cartão de crédito ou outra forma de pagamento online.| ALTA |
+|RF-006|Área de perfil para os fornecedores, permitindo que eles possam gerenciar seus serviços e informações de contato.| ALTA |
+|RF-007| Notificações: O aplicativo deve enviar notificações para os usuários, informando-os sobre o status dos serviços agendados, avaliações recebidas e outras informações relevantes.
+
 
 ### Requisitos não Funcionais
 
