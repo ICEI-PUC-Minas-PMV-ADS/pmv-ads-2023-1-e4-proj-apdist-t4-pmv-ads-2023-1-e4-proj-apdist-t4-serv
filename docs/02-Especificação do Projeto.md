@@ -150,11 +150,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
+|  ID  | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001|Fazer login: os fornecedores de serviços ou usuarios devem fazer login para acessar o aplicativo.| ALTA | 
-|RF-002|Cadastro de fornecedores de serviços: os fornecedores de serviços devem poder se cadastrar no aplicativo, fornecendo informações como nome, endereço, telefone, e-mail, especialidades, entre outras.| ALTA | 
+|RF-001|Cadastro de fornecedores de serviços: os fornecedores de serviços devem poder se cadastrar no aplicativo, fornecendo informações como nome, endereço, telefone, e-mail, especialidades, entre outras.| ALTA | 
+|RF-002|Fazer login:Os fornecedores de serviços devem fazer login para acessar o aplicativo.| ALTA | 
 |RF-003|Cadastro de usuários: os usuários devem poder se cadastrar no aplicativo, fornecendo informações como nome, endereço, telefone, e-mail, entre outras.| ALTA |
+|RF-003|Fazer login:Os usuarios devem fazer login para acessar o aplicativo.| ALTA |
 |RF-004|Busca de serviços: os usuários devem poder pesquisar serviços disponíveis na sua região, por tipo de serviço, especialidade, avaliação, entre outras opções.| ALTA |
 |RF-005|Agendamento de serviços: os usuários devem poder agendar serviços diretamente pelo aplicativo, escolhendo a data e horário mais convenientes.   | ALTA |
 |RF-006|Avaliação de serviços: os usuários devem poder avaliar os serviços prestados pelos fornecedores, ajudando outros usuários a escolherem o melhor prestador de serviços.| MÉDIA |
