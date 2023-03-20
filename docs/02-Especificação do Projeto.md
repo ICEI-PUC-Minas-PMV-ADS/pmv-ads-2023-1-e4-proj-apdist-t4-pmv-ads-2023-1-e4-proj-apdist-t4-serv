@@ -226,6 +226,9 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 ![Gerenciamento de tempo](img/matriz-de-gerenciamento-de-tempot.jpeg)
 
 ## Gerenciamento de Equipe
+![Simple Project Timeline](img/GerenciamentoDeEquipeA.png)
+![Simple Project Timeline](img/GerenciamentoDeEquipeC.png)
+
 
 A matriz de gerenciamento de equipe  mostra as principais tarefas do projeto e como a equipe será alocada para cada tarefa. As porcentagens mostram a distribuição de tempo de cada recurso em cada tarefa.
 
@@ -243,4 +246,4 @@ A matriz de orçamento mostra as principais tarefas do projeto, os recursos nece
 
 É importante lembrar que essa é apenas uma estimativa de custos e que os custos reais podem variar dependendo de vários fatores, como a complexidade do projeto, o número de recursos necessários, o tempo necessário para cada tarefa e outros fatores que podem influenciar o custo final do projeto.
 
-![Orçamento](img/matriz-de-orçamento.jpeg)
+![Orçamento](img/GestaoOrcamentaria.png)
