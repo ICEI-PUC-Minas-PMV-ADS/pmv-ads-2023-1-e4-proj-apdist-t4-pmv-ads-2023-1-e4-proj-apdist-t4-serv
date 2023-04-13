@@ -12,8 +12,8 @@ Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina tam
 
 |Ambiente| Plataforma  |Link de Acesso |
 |--------------------|------------------------------------|----------------------------------------|
-|Repositório de código fonte |GitHub|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e4-proj-apdist-t4-pmv-ads-2023-1-e4-proj-apdist-t4-serv/edit/main/docs/03-Metodologia.md
-|Documentos do projeto |GitHubDocs|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e4-proj-apdist-t4-pmv-ads-2023-1-e4-proj-apdist-t4-serv/edit/main/docs/03-Metodologia.md|
+|Repositório de código fonte |GitHub|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e4-proj-apdist-t4-pmv-ads-2023-1-e4-proj-apdist-t4-serv|
+|Documentos do projeto |GitHubDocs|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e4-proj-apdist-t4-pmv-ads-2023-1-e4-proj-apdist-t4-serv|
 |Projeto de Interface e Wireframes |figma|https://www.figma.com/file/DjwRKORYkt48l6M7zlk4Jc/Contrata%C3%A7%C3%A3o-Servi%C3%A7os?node-id=0-1&t=6wZljybC6DF3Rdhj-0|
 |Gerenciamento do Projeto |Trello|https://trello.com/invite/b/fMFbID35/ATTI5a8774f22ea481ac336a1c445efa5472B88E6BE0/bh-contratacao-de-servicos-4-periodo|
 
