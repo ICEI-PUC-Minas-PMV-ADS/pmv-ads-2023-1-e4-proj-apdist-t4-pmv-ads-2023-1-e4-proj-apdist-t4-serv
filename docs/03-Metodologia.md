@@ -67,15 +67,23 @@ Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum 
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+<p align="justify">Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello estruturado com as seguintes listas:</p>
+
+<p align="justify">
+● <b>Backlog</b>: Essa lista é onde as tarefas de projetos são alocadas em cartões individuais. 
+
+● <b>A Fazer</b>: Uma vez que a tarefa foi completamente aprofundada, ela é movida a essa lista para mostrar à equipe que a tarefa já está pronta para ser executada. A essa altura, um membro da equipe é designado para ser o dono da tarefa e as datas de entrega são estabelecidas.
+
+● <b>Em andamento</b>: à medida que o time começa a trabalhar nas tarefas, os cartões são movidos para essa lista. Rapidamente, todo o time pode ver as tarefas atuais de cada membro. Os cartões do Trello também permitem que os times conversem e façam perguntas uns aos outros sobre uma certa tarefa com a funcionalidade de comentários. 
+
+● <b>Revisão</b>:  Quando a tarefa está quase concluída, é o momento de movê-la para esta lista para que seja revisada ou que alguém dê uma segunda olhada. 
+
+● <b>Teste</b>:  Apos a revisão, a tarefa é movida para a fila de teste, onde será realizados os devidos testes para saber se a tarefa atende os requisitos.
+
+● <b>Concluído</b>: Quando a tarefa tiver sido revisada, testada e aprovada, ela é movida para fila de concluído.</p>
+
+
+<p align="justify">O quadro kanban utilizado pelo grupo está disponível no Trello e pode ser acessado através da URL https://trello.com/invite/b/fMFbID35/ATTI5a8774f22ea481ac336a1c445efa5472B88E6BE0/bh-contratacao-de-servicos-4-periodo </p>
 
 ### Ferramentas
 
