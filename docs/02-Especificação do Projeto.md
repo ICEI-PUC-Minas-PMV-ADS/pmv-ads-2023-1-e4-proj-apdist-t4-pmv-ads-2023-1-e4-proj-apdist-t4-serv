@@ -23,10 +23,9 @@ O prestador de serviços chega no horário marcado, realiza o conserto com rapid
 ![Persona João](img/João.jpeg)
 - Idade: 28 anos 
 - Ocupação: Estudante universitário.</p>
-João é um jovem que acabou de se mudar para um apartamento alugado e precisa de ajuda para montar seus móveis e instalar o ar-condicionado.
-Ele acessa o aplicativo, pesquisa por serviços de montagem de móveis e instalação de ar-condicionado em sua região, seleciona o prestador de serviços mais bem avaliado e agenda uma visita para o final de semana.
-O prestador de serviços chega no horário marcado, monta todos os móveis de João com rapidez e habilidade, e instala o ar-condicionado sem nenhum problema.
-João avalia positivamente o serviço prestado e paga pelo serviço diretamente pelo aplicativo, com segurança e praticidade.
+João é um jovem que acabou de se mudar para um apartamento alugado e precisa de um dinheiro extra para ajudar nas despesas com os estudos.
+Ele acessa o aplicativo e verifica as notificações para o(s) seviço(s) ao(s) qual(is) se cadatrou.
+Por ser bem qualificado e pontual é sempre bem alaliado na plataforma.
 
 ## Persona 3 Nome: Maria Nunes
 ![Persona Maria](img/Maria.jpeg)
@@ -37,24 +36,6 @@ Ela acessa o aplicativo, pesquisa por serviços de limpeza e jardinagem em sua r
 O prestador de serviços chega no horário marcado, realiza a limpeza da casa e do jardim com cuidado e eficiência, e Maria fica muito satisfeita com o resultado.
 Ela avalia positivamente o serviço prestado e paga pelo serviço diretamente pelo aplicativo, com segurança e praticidade.
 
-## Persona 4 Nome: Rafael Oliveira
-![Rafael](img/Rafael.jpeg)
-- Idade: 40 anos
-- Ocupação: Empresário.</p>
-Rafael é um homem ocupado, que viaja com frequência a trabalho e precisa de uma pessoa de confiança para cuidar de sua casa e de seus animais de estimação quando está ausente.
-Ele acessa o aplicativo, pesquisa por serviços de cuidador de animais e de casa em sua região, verifica as avaliações de outros usuários e encontra um prestador de serviços que se encaixa em suas necessidades.
-O prestador de serviços visita a casa de Rafael antes de sua próxima viagem, para conhecer os animais e as tarefas a serem realizadas, e fica responsável por cuidar da casa e dos animais enquanto ele está fora.
-Rafael avalia positivamente o serviço prestado e paga pelo serviço diretamente pelo aplicativo, com segurança e praticidade.
-
-## Persona 5 Nome: Tiago Alves
-![Persona Tiago](img/Tiago.jpeg)
-- Idade: 25 anos
-- Ocupação: Estudante universitário.</p>
-Tiago é um jovem que mora em uma república com outros estudantes e precisa de um profissional qualificado para consertar a máquina de lavar que está quebrada.
-Ele acessa o aplicativo, pesquisa por serviços de manutenção de eletrodomésticos em sua região, verifica as avaliações de outros usuários e encontra um prestador de serviços com experiência nesse tipo de reparo.
-O prestador de serviços chega no horário marcado, analisa a máquina de lavar e consegue consertá-la rapidamente, sem nenhum problema.
-Tiago avalia positivamente o serviço prestado e paga pelo serviço diretamente pelo aplicativo, com segurança e praticidade.
-
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -64,8 +45,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Ana Silva       |Desejo uma ferramenta para encontrar prestadores de serviços de Para solucionar um problema na instalação Hidráulica |Ana é uma mulher ocupada, que tem pouco tempo para cuidar da casa e precisa se concentrar em sua carreira e em seus filhos. Ela precisa de um profissional qualificado e confiável para consertar a torneira que está vazando na cozinha. |
 |João Cardoso    |Desejo uma ferramenta para encontrar prestadores de serviços de montagem de móveis e instalação de ar-condicionado em sua região|João é um jovem que acabou de se mudar para um apartamento alugado e precisa de ajuda para montar seus móveis e instalar o ar-condicionado. |
 |Maria Nunes     |Desejo uma ferramenta para encontrar prestadores de serviços de  limpeza e jardinagem em sua região|Maria é uma senhora que mora sozinha e precisa de ajuda para realizar algumas tarefas domésticas, como limpeza e jardinagem. |
-|Rafael Oliveira |Desejo uma ferramenta para encontrar prestadores de serviços de cuidador de animais e de casa em sua região |Rafael é um homem ocupado, que viaja com frequência a trabalho e precisa de uma pessoa de confiança para cuidar de sua casa e de seus animais de estimação quando está ausente.|
-|Tiago Alves     |Desejo uma ferramenta para encontrar prestadores de serviços de manutenção de eletrodomésticos em sua região |Tiago é um jovem que mora em uma república com outros estudantes e precisa de um profissional qualificado para consertar a máquina de lavar que está quebrada. |
 
 ## Modelagem do Processo de Negócio 
 
