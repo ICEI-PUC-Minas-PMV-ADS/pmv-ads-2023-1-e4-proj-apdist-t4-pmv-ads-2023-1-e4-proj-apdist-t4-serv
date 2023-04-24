@@ -44,7 +44,7 @@ Segue abaixo o esquema relacional deste projeto:
 ![Esquema Relacional](img/Esquema-relacional-1.jpeg)
 ## Modelo Físico
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.sql.
 
 ## Tecnologias Utilizadas
 
@@ -56,12 +56,9 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+A API foi publincada no servidor próprio no seguinte link:
+http://servicos.melopecas.com.br/index.html
+
 
 ## Qualidade de Software
 
