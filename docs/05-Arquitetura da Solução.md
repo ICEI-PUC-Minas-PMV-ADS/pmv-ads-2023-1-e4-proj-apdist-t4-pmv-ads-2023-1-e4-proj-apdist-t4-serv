@@ -4,6 +4,10 @@
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
+Segur arquitetura junto a API REST do projeto:
+
+<img src=https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e4-proj-apdist-t4-pmv-ads-2023-1-e4-proj-apdist-t4-serv/blob/630bf13634be21609f79bc48b7075ee413a99a09/docs/img/API%20ARQ.png>
+
 ![Arquitetura da Solução](img/02-mob-arch.png)
 
 ## Diagrama de Classes
