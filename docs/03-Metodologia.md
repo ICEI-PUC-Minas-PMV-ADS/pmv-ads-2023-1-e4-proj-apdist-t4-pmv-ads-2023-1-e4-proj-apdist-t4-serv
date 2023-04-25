@@ -56,7 +56,7 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 A equipe está organizada da seguinte maneira:
 - Scrum Master: Ruver Caldeira;
 - Product Owner: Mário Fernandes;
-- Equipe de Desenvolvimento: Marcelo Farias, Moisés Silva e Mário Fernandes;
+- Equipe de Desenvolvimento: Marcelo Farias, Moisés Silva e Mário Fernandes, Márcia Ferreira e Ruver Caldeira; 
 - Equipe de Design: Márcia Ferreira e Ruver Caldeira.
 
 > **Links Úteis**:
