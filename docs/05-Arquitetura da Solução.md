@@ -53,7 +53,6 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 A API foi publincada no servidor próprio no seguinte link:
 http://servicos.melopecas.com.br/index.html
