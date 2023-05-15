@@ -7,44 +7,48 @@ using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-//validar toke,
-var key = Encoding.ASCII.GetBytes(Settings.Secret);
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
+
 // adicionaod autenticacao
-builder.Services.AddAuthentication( options =>
+builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
 
 })
     .AddJwtBearer(options =>
-     {
-         options.RequireHttpsMetadata = false;
-         options.SaveToken = true;
-         options.TokenValidationParameters = new TokenValidationParameters
-         {
-             ValidateIssuerSigningKey = true,
-             IssuerSigningKey = new SymmetricSecurityKey(key),
-             ValidateIssuer = false,
-             ValidateAudience = false,
-         };
-     });
-
-
+    {
+        options.SaveToken = true;
+        options.RequireHttpsMetadata = false;
+        options.TokenValidationParameters = new TokenValidationParameters()
+        {
+            //ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Settings.Secret)),
+            ValidateIssuer = false,
+            ValidateAudience = false,
+        };
+    });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "apiagenda", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "apiServicos", Version = "v1" });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
     {
         Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey,
+        Type = SecuritySchemeType.Http,
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
@@ -65,18 +69,6 @@ builder.Services.AddSwaggerGen(c =>
                     }
                 });
 });
-/*builder.Services.AddSwaggerGen(config =>
-{
-    config.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
-    {
-        Title = "contratarServicos",
-        Version = "v1"
-    });
-});*/
-
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-);
 
 var app = builder.Build();
 
@@ -85,8 +77,9 @@ app.UseSwagger();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwaggerUI();
-} 
-else {
+}
+else
+{
     app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
@@ -102,6 +95,7 @@ app.UseCors(x => x
                 .AllowAnyHeader()
                 .SetIsOriginAllowed(origin => true) // allow any origin
                 .AllowCredentials()); // allow credentials
+
 
 app.UseAuthentication();
 app.UseAuthorization();

@@ -10,19 +10,19 @@ namespace api_contratos_servicos.Context
 
         }
 
-        public DbSet<Usuario>? Usuarios { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
-        public DbSet<Cliente>? Clientes { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
 
-        public DbSet<Fornecedor>? Fornecedores { get; set; }
+        public DbSet<Fornecedor> Fornecedores { get; set; }
 
-        public DbSet<Pedido>? Pedidos { get; set; }
+        public DbSet<Pedido> Pedidos { get; set; }
 
-        public DbSet<Orcamento>? Orcamentos { get; set; }
+        public DbSet<Orcamento> Orcamentos { get; set; }
 
-        public DbSet<TipoServico>? TipoServicos { get; set; }
+        public DbSet<TipoServico> TipoServicos { get; set; }
 
-        public DbSet<Servico>? Servicos { get; set; }
+        public DbSet<Servico> Servicos { get; set; }
 
     }
 }

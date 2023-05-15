@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace api_contratos_servicos.Models
 {
-    [Table("Orçamento")]
+    [Table("Orcamento")]
     public class Orcamento
     {
         [Key]

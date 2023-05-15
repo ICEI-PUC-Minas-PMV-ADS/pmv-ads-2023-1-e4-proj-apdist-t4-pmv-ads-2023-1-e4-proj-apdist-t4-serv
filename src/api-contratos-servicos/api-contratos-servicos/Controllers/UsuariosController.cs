@@ -32,15 +32,18 @@ namespace api_contratos_servicos.Controllers
 
             if (_context.Usuarios == null)
             {
-                return NotFound();
+                return Unauthorized();
             }
 
-            var usuarioLogado = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuario.Email && u.Senha == usuario.Senha);
 
-            if (usuarioLogado == null)
+            var usuarioLogado = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuario.Email);
+
+            if (usuarioLogado == null || !BCrypt.Net.BCrypt.Verify(usuario.Senha, usuarioLogado.Senha))
             {
-                return NotFound();
+                System.Diagnostics.Debug.WriteLine(" nao bateu");
+                return Unauthorized();
             }
+            System.Diagnostics.Debug.WriteLine(" bateu");
 
             var token = TokenService.GenerateToken(usuarioLogado);
 
@@ -63,7 +66,6 @@ namespace api_contratos_servicos.Controllers
             {
                 return Problem("Entity set 'ApplicationDbContext.Usuarios'  is null.");
             }
-
             //ValidaUsuario
             var usuarioCadastro = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuarioDTO.Email);
 
@@ -71,7 +73,8 @@ namespace api_contratos_servicos.Controllers
             {
                 return new UsuarioRespostaDTO(usuarioCadastro.Id, usuarioCadastro.Nome, usuarioCadastro.Email,usuarioCadastro.Role, null);
             }
-            usuarioCadastro = new Usuario(usuarioDTO.Nome, usuarioDTO.Email, usuarioDTO.Senha, usuarioDTO.Tipo);
+
+            usuarioCadastro = new Usuario(usuarioDTO.Nome, usuarioDTO.Email, BCrypt.Net.BCrypt.HashPassword(usuarioDTO.Senha), usuarioDTO.Tipo);
             _context.Usuarios.Add(usuarioCadastro);
             await _context.SaveChangesAsync();
 

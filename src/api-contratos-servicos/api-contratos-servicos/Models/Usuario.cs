@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace api_contratos_servicos.Models
 {
@@ -17,6 +18,7 @@ namespace api_contratos_servicos.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Obrigatório Informar a senha!")]
+        [JsonIgnore]
         public string Senha { get; set; }
 
         [Required(ErrorMessage = "Obrigatório Informar a senha!")]

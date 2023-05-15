@@ -16,10 +16,10 @@ namespace api_contratos_servicos.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.5")
+                .HasAnnotation("ProductVersion", "8.0.0-preview.3.23174.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("api_contratos_servicos.Models.Cliente", b =>
                 {
@@ -27,7 +27,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Bairro")
                         .IsRequired()
@@ -66,7 +66,7 @@ namespace api_contratos_servicos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clientes", (string)null);
+                    b.ToTable("Clientes");
                 });
 
             modelBuilder.Entity("api_contratos_servicos.Models.Fornecedor", b =>
@@ -75,7 +75,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Bairro")
                         .IsRequired()
@@ -114,7 +114,7 @@ namespace api_contratos_servicos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Fornecedores", (string)null);
+                    b.ToTable("Fornecedores");
                 });
 
             modelBuilder.Entity("api_contratos_servicos.Models.Orcamento", b =>
@@ -123,7 +123,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Data")
                         .IsRequired()
@@ -147,7 +147,7 @@ namespace api_contratos_servicos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Orçamento", (string)null);
+                    b.ToTable("Orcamento");
                 });
 
             modelBuilder.Entity("api_contratos_servicos.Models.Pedido", b =>
@@ -156,7 +156,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Cliente")
                         .IsRequired()
@@ -175,7 +175,7 @@ namespace api_contratos_servicos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Pedidos", (string)null);
+                    b.ToTable("Pedidos");
                 });
 
             modelBuilder.Entity("api_contratos_servicos.Models.Servico", b =>
@@ -184,7 +184,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("DataAprovacaoOrcamento")
                         .IsRequired()
@@ -212,7 +212,7 @@ namespace api_contratos_servicos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("servico", (string)null);
+                    b.ToTable("servico");
                 });
 
             modelBuilder.Entity("api_contratos_servicos.Models.TipoServico", b =>
@@ -221,7 +221,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("descricaoServico")
                         .IsRequired()
@@ -229,7 +229,7 @@ namespace api_contratos_servicos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TipoServico", (string)null);
+                    b.ToTable("TipoServico");
                 });
 
             modelBuilder.Entity("api_contratos_servicos.Models.Usuario", b =>
@@ -238,7 +238,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -258,7 +258,7 @@ namespace api_contratos_servicos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("usuarios", (string)null);
+                    b.ToTable("usuarios");
                 });
 #pragma warning restore 612, 618
         }

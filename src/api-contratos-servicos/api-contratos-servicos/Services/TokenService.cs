@@ -22,7 +22,7 @@ namespace api_contratos_servicos.Services
                    new Claim(ClaimTypes.Email, user.Email)
                 }),
                 
-                Expires = DateTime.UtcNow.AddHours(1),
+                Expires = DateTime.UtcNow.AddHours(8),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),algorithm:SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);

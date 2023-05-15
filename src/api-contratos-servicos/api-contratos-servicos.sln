@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.1.32421.90
+VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-contratos-servicos", "api-contratos-servicos\api-contratos-servicos.csproj", "{CCC2E380-A5AD-4828-82C9-0DF4357D0278}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-contratos-servicos", "api-contratos-servicos\api-contratos-servicos.csproj", "{FFBCC556-6B47-4F4D-B67E-FC1B05902139}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CCC2E380-A5AD-4828-82C9-0DF4357D0278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CCC2E380-A5AD-4828-82C9-0DF4357D0278}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CCC2E380-A5AD-4828-82C9-0DF4357D0278}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CCC2E380-A5AD-4828-82C9-0DF4357D0278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFBCC556-6B47-4F4D-B67E-FC1B05902139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFBCC556-6B47-4F4D-B67E-FC1B05902139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFBCC556-6B47-4F4D-B67E-FC1B05902139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFBCC556-6B47-4F4D-B67E-FC1B05902139}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {56E763B8-8D3F-4531-BAD4-77AF33CEF5B2}
+		SolutionGuid = {17701FB4-8759-4725-975E-0FC5C17A0ED3}
 	EndGlobalSection
 EndGlobal

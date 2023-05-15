@@ -11,17 +11,18 @@ using api_contratos_servicos.Context;
 namespace api_contratos_servicos.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220619215845_M05")]
-    partial class M05
+    [Migration("20230425214224_M00")]
+    partial class M00
     {
+        /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.5")
+                .HasAnnotation("ProductVersion", "8.0.0-preview.3.23174.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("api_contratos_servicos.Models.Cliente", b =>
                 {
@@ -29,7 +30,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Bairro")
                         .IsRequired()
@@ -77,7 +78,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Bairro")
                         .IsRequired()
@@ -125,7 +126,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Data")
                         .IsRequired()
@@ -149,7 +150,7 @@ namespace api_contratos_servicos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Orçamento");
+                    b.ToTable("Orcamento");
                 });
 
             modelBuilder.Entity("api_contratos_servicos.Models.Pedido", b =>
@@ -158,17 +159,17 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Cliente")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Descrição")
+                    b.Property<string>("Descricao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TipoServiço")
+                    b.Property<string>("TipoServico")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -186,7 +187,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("DataAprovacaoOrcamento")
                         .IsRequired()
@@ -223,7 +224,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("descricaoServico")
                         .IsRequired()
@@ -240,7 +241,7 @@ namespace api_contratos_servicos.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
                         .IsRequired()
