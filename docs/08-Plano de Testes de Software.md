@@ -11,3 +11,8 @@ Identificação das funcionalidades-chave a serem testadas, como validação de 
 
 Desenvolvimento de testes manuais para cada componente individual da tela de login, garantindo que funcionem corretamente.
 
+### Testes de Integração:
+
+Verificação da integração entre os componentes da tela de login, como o campo de email, campo de senha, botão "Entrar" e link de cadastro.
+Validação do fluxo correto de dados e interações entre os componentes.
+
