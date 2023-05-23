@@ -13,6 +13,7 @@ import { RegisterComponent } from './register/register.component';
 import { AuthService } from './auth.service';
 import { TokenInterceptor } from './token.interceptor';
 import { NgxMaskModule } from "ngx-mask";
+import { PrincipalComponent } from './principal/principal.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,14 @@ import { NgxMaskModule } from "ngx-mask";
     LoginComponent,
     LayoutComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    NgxMaskModule.forRoot(),
     AppRoutingModule,
     TemplateModule
   ],
