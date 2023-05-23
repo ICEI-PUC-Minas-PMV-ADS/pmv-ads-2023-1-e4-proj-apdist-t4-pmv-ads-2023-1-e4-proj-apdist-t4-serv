@@ -42,5 +42,5 @@ Os testes ágeis desempenham um papel fundamental no desenvolvimento de uma tela
 
 ![Tela login link Cadastrar](Tela-Login-Criar-Conta.jpeg)
 
-![Tela Cadastro Dados](Tela-Cadastro-Com-Dados.jpeg)
+![Tela Cadastro Dados](img/Tela-Cadastro-Com-Dados.jpeg)
 
