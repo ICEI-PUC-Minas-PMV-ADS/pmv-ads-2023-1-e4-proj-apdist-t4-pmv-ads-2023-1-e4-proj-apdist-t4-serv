@@ -29,7 +29,9 @@ Avaliação da segurança da tela de login, como prevenção de ataques de inje�
 
 Coleta de feedback dos usuários por meio de testes de usabilidade, visando identificar problemas de navegação, compreensão e usabilidade da tela de login.
 Iterações constantes com os usuários para melhorar a experiência e usabilidade da tela.
-Conclusão:
+
+### Conclusão:
+
 Os testes ágeis desempenham um papel fundamental no desenvolvimento de uma tela de login funcional, segura e de fácil utilização. Ao seguir as práticas e técnicas mencionadas neste relatório, é possível garantir a qualidade do software e proporcionar uma experiência positiva aos usuários. É importante ressaltar que a aplicação de testes ágeis deve ser um processo contínuo, integrado ao ciclo de desenvolvimento, para garantir a detecção precoce de problemas e a entrega de um produto de qualidade. Além disso, a colaboração entre desenvolvedores, testadores e usuários é essencial para o sucesso dos testes ágeis.
 
 
