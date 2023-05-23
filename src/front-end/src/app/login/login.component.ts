@@ -29,7 +29,7 @@ export class LoginComponent {
                       console.log(response);
                       const access_token = JSON.stringify(response);
                       localStorage.setItem('access_token',access_token);
-                      this.router.navigate(['/home']);
+                      this.router.navigate(['/sistema/principal']);
                     }, 
                     error: (errorResponse) => {
                       console.log(errorResponse);

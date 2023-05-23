@@ -5,14 +5,15 @@ import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { authGuard } from './auth.guard';
+import { PrincipalComponent } from './principal/principal.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: '', component: HomeComponent},
   {path: 'sistema', component: LayoutComponent, children: [
-    {path: 'principal', component: HomeComponent, canActivate: [authGuard]},
-    {path: '',redirectTo: '/principal', pathMatch: 'full'}
+    {path: 'principal', component: PrincipalComponent, canActivate: [authGuard]},
+    {path: '',redirectTo: '/sistema/principal', pathMatch: 'full'}
   ]}
 ];
 
