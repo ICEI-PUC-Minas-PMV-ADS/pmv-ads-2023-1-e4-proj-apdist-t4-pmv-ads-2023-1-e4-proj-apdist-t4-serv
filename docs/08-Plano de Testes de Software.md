@@ -24,10 +24,8 @@ Verificação da usabilidade da tela, incluindo feedbacks visuais, mensagens de 
 Testes de Segurança:
 
 Avaliação da segurança da tela de login, como prevenção de ataques de injeção de código, autenticação inadequada e vulnerabilidades conhecidas.
-Testes de Desempenho:
 
-
-Testes de Usabilidade:
+### Testes de Usabilidade:
 
 Coleta de feedback dos usuários por meio de testes de usabilidade, visando identificar problemas de navegação, compreensão e usabilidade da tela de login.
 Iterações constantes com os usuários para melhorar a experiência e usabilidade da tela.
