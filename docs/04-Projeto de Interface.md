@@ -26,7 +26,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ## Wireframes
 <p align="justify">O wireframe apresenta o fluxo visual do procedimento passo a passo, baseado no fluxograma acima. Para a criação do wireframe foi utlizado Figma.</p>
 
-![Exemplo de Wireframe](../docs/img/Capturar.png)
+![Exemplo de Wireframe](../docs/img/Capturar.PNG)
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web, site mobile e seu relacionamentos entre suas páginas. Um wireframe web/Mobile é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
