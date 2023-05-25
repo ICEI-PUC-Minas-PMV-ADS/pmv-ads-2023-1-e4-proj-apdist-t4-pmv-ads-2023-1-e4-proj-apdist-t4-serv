@@ -24,6 +24,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 
 ## Wireframes
+<p align="justify">O wireframe apresenta o fluxo visual do procedimento passo a passo, baseado no fluxograma acima. Para a criação do wireframe foi utlizado Figma.</p>
 
 ![Exemplo de Wireframe](img/wireframe-example.png)
 
