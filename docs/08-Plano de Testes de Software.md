@@ -38,13 +38,13 @@ Os testes ágeis desempenham um papel fundamental no desenvolvimento de uma tela
 ### Interface do usuário
 
 ### Tela Login : Erro Caso usuário ou senha invalidos 
-![Tela login Erro](docs/img/Tela-Login-Erro-Usuario-Invalido.jpeg)
+![Tela login Erro](/img/Tela-Login-Erro-Usuario-Invalido.jpeg)
 
 ### Tela Login :Caso usuário ou senha validos 
-![Tela login Dados](docs/img/Tela-Login -validos.jpeg)
+![Tela login Dados](/img/Tela-Login -validos.jpeg)
 
 ### Tela Login : Link para cadastra-se
-![Tela login link Cadastrar](docs/img/Tela-Login-Link-Cadastrar.jpeg)
+![Tela login link Cadastrar](/img/Tela-Login-Link-Cadastrar.jpeg)
 
 ### Tela De Cadastro: Formulario de cadastro
-![Tela Cadastro Dados](docs/img/Tela-Cadastro-Com-Dados.jpeg)
+![Tela Cadastro Dados](/img/Tela-Cadastro-Com-Dados.jpeg)
