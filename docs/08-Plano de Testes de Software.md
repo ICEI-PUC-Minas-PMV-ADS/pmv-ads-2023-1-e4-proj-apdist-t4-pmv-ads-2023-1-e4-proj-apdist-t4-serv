@@ -35,16 +35,4 @@ Iterações constantes com os usuários para melhorar a experiência e usabilida
 Os testes ágeis desempenham um papel fundamental no desenvolvimento de uma tela de login funcional, segura e de fácil utilização. Ao seguir as práticas e técnicas mencionadas neste relatório, é possível garantir a qualidade do software e proporcionar uma experiência positiva aos usuários. É importante ressaltar que a aplicação de testes ágeis deve ser um processo contínuo, integrado ao ciclo de desenvolvimento, para garantir a detecção precoce de problemas e a entrega de um produto de qualidade. Além disso, a colaboração entre desenvolvedores, testadores e usuários é essencial para o sucesso dos testes ágeis.
 
 
-### Interface do usuário
 
-### Tela Login : Erro Caso usuário ou senha invalidos 
-![Tela login Erro](img/Tela-Login-Erro-Usuario-Invalido.jpeg)
-
-### Tela Login :Caso usuário ou senha validos 
-![Tela login Dados](img/Tela-Login-Valido.jpeg)
-
-### Tela Login : Link para cadastra-se
-![Tela login link Cadastrar](img/Tela-Login-Link-Cadastrar.jpeg)
-
-### Tela De Cadastro: Formulario de cadastro
-![Tela Cadastro Dados](img/Tela-Cadastro-Com-Dados.jpeg)
