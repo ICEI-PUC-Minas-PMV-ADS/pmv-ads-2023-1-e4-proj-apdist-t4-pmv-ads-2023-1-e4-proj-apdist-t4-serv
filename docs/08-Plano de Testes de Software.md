@@ -16,7 +16,7 @@ método Post
 ### Critérios de Êxito :	
 Será os atributos preenchidos e o código 201.
 
-### Caso de Teste	= CT -002 - Fazer login
+### Caso de Teste	= 002 - Fazer login
 ### Requisitos Associados: RF-002 Fazer login
 ### Objetivo do Teste	Avaliar:
 Avaliar funcionalidade de login de fornecedores
@@ -32,7 +32,7 @@ método GET{ID}
 Será os atributos preenchidos e o código 201.
 
 
-### Caso de Teste	= CT -003 - Atualizar Cadastro
+### Caso de Teste	= 003 - Atualizar Cadastro
 ### Requisitos Associados: RF-001 Cadastro de fornecedores de serviços
 ### Objetivo do Teste	Avaliar:
 Avaliar funcionalidade de Atualizar Cadastro de fornecedores
