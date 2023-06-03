@@ -22,17 +22,7 @@ namespace api_contratos_servicos.Controllers
             _context = context;
         }
 
-        // GET: api/Pedidos
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Pedido>>> GetPedido()
-        {
-          if (_context.Pedidos == null)
-          {
-              return NotFound();
-          }
-            return await _context.Pedidos.ToListAsync();
-        }
-
+        
         // GET: api/Pedidos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Pedido>> GetPedido(int id)
@@ -109,7 +99,7 @@ namespace api_contratos_servicos.Controllers
 
             return CreatedAtAction("GetPedido", new { id = pedido.Id }, pedido);
         }
-
+        /*
         // DELETE: api/Pedidos/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePedido(int id)
@@ -128,7 +118,7 @@ namespace api_contratos_servicos.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }
+        }*/
 
         private bool PedidoExists(int id)
         {

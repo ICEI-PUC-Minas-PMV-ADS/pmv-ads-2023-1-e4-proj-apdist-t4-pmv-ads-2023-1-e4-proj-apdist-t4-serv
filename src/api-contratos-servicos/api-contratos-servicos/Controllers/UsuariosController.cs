@@ -78,10 +78,18 @@ namespace api_contratos_servicos.Controllers
             _context.Usuarios.Add(usuarioCadastro);
             await _context.SaveChangesAsync();
 
+
+
+            Console.WriteLine("salvou cliente");
+            Console.WriteLine(usuarioDTO.Tipo);
+
             //salvar cliente ou Fornecedor
             if (usuarioDTO.Tipo == "cliente") {
                 var cliente = usuarioDTO.usuarioCliente();
                 cliente.UsuarioId = usuarioCadastro.Id;
+
+                Console.WriteLine("salvar cliente");
+                Console.WriteLine(cliente);
                 _context.Clientes.Add(cliente);
                 await _context.SaveChangesAsync();
             } else if(usuarioDTO.Tipo == "fornecedor") {
