@@ -42,18 +42,17 @@ export class RegisterComponent {
   }
 
   onSubmit(){
-    console.log(this.usuarioRegistro);
     if (this.usuarioRegistro) {
       this.authService
                   .salvar(this.usuarioRegistro)
                   .subscribe( {
                     next: (response) =>{
                       console.log(response);
-                      this.router.navigate(['/home']);
+                      this.router.navigate(['/login']);
                     }, 
                     error: (errorResponse) => {
                       console.log(errorResponse);
-                      this.errors = ['Usuário e/ou senha incorreto(s).']
+                      this.errors = ['Erro ao cadastrar usuario.']
 
                     }
                   });
