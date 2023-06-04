@@ -13,7 +13,7 @@ Avaliar funcionalidade de criação de Usuarios método Post
 5. inserir os dados:{"nome": "string","email": "string","senha": "string","tipo": "string""cpf": "string","cep": "string", "telefone": "string","logradouro": "string","numero": "string","bairro": "string","cidade": "string","uf": "string"}
 6. clicar em execute.
 ### Critérios de Êxito :	
-Será os atributos preenchidos e o código 20o Success.
+Será os atributos preenchidos e o código 200 Success.
 
 ### Caso de Teste	= 002 - Fazer login
 ### Requisitos Associados: RF-002 Fazer login
