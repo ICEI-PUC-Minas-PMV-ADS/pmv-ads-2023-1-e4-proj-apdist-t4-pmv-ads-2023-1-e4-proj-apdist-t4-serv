@@ -48,20 +48,22 @@ O passo a passo para se conectar ao banco de dados da aplicação e verificar a 
 Na janela "Connect to Server" (Conectar ao Servidor), 
 
 2.preencha as seguintes informações:
-a.Server type (Tipo de servidor): Selecione "Database Engine" (Mecanismo de Banco de Dados).
-b.Nome do servidor: SQL8003.site4now.net (informação fornecida na ConnectionString).
-c.Authentication (Autenticação): Escolha "SQL Server Authentication" (Autenticação do SQL Server).
-d.Login (Nome de usuário): db_a98226_servicos_admin (informação fornecida na ConnectionString).
-e.Password (Senha): M3l0@123 (informação fornecida na ConnectionString).
-f.Selecione "Remember password" (Lembrar senha) se desejar que o SSMS lembre a senha para futuras conexões.
+3.Server type (Tipo de servidor): Selecione "Database Engine" (Mecanismo de Banco de Dados).
+4.Nome do servidor: SQL8003.site4now.net (informação fornecida na ConnectionString).
+5.Authentication (Autenticação): Escolha "SQL Server Authentication" (Autenticação do SQL Server).
+6.Login (Nome de usuário): db_a98226_servicos_admin (informação fornecida na ConnectionString).
+7.Password (Senha): M3l0@123 (informação fornecida na ConnectionString).
+8.Selecione "Remember password" (Lembrar senha) se desejar que o SSMS lembre a senha para futuras conexões.
 
-3.Clique no botão "Connect" (Conectar) para estabelecer a conexão com o servidor.
+9.Clique no botão "Connect" (Conectar) para estabelecer a conexão com o servidor.
 
-4.Após a conexão ser estabelecida, navegue até a base de dados "db_a98226_servicos" (informação fornecida na ConnectionString) que contém as informações de usuários e senhas.
+10.Após a conexão ser estabelecida, navegue até a base de dados "db_a98226_servicos" (informação fornecida na ConnectionString) que contém as informações de usuários e senhas.
 
-5.Selecione Nova Consulta execute SELECT * FROM usuarios;.
+11.Selecione Nova Consulta execute SELECT * FROM usuarios;.
 
-6.Verifique as configurações de criptografia aplicadas às colunas de senha.
+12.Verifique as configurações de criptografia aplicadas às colunas de senha.
+
+13. Critérios de Êxito : senhas estejam devidamente criptografadas.
 
 
 
