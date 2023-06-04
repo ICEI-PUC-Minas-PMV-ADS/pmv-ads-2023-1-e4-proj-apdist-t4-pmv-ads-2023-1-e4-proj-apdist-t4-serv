@@ -62,8 +62,7 @@ Esses testes demonstram que o processo de login de usuários está funcionando c
 ## Caso de Teste = 003 - (Banco De Dados Criptografia Senha Usuarios)
 
 ### Conectar ao Banco De Dados
-![Conectar-Ao-Banco-De-Dados-Da-Aplicação-Utilizando-SQL-Server-Management-Studio.]
-(img/Conectar-Ao-Banco-De-Dados-Da-Aplicação-Utilizando-SQL-Server-Management-Studio.png)
+![Conectar-Ao-Banco-De-Dados-Da-Aplicação-Utilizando-SQL-Server-Management-Studio.](img/Conectar-Ao-Banco-De-Dados-Da-Aplicação-Utilizando-SQL-Server-Management-Studio.png)
 
 ### Conectado ao banco de dados
 ![Usuarios-Login-Preencher](img/Conectado-Ao-Banco-De-Dados.png)
