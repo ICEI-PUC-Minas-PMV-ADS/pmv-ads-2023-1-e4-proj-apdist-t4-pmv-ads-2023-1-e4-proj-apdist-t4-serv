@@ -9,28 +9,27 @@ Avaliar funcionalidade de criação de Usuarios método Post
 1. Abrir o projeto no  Visual estúdio e Iniciar Depuração.
 2.Swagger URL localhost:7221/swagger/index.html.
 3. Acessar Usuarios Cadastrar método Post. Request URL https://localhost:7221/api/Usuarios/cadastrar.
-4. clicar em Try it out, observar o Request Body deve esta em application/json.
-5. inserir os dados:{"nome": "string","email": "string","senha": "string","tipo": "string""cpf": "string","cep": "string", "telefone": "string","logradouro": "string","numero": "string","bairro": "string","cidade": "string","uf": "string"}.
-6. clicar em execute.
+4. Clicar em Try it out, observar o Request Body deve esta em application/json.
+5. Inserir os dados:{"nome": "string","email": "string","senha": "string","tipo": "string""cpf": "string","cep": "string", "telefone": "string","logradouro": "string","numero": "string","bairro": "string","cidade": "string","uf": "string"}.
+6. Clicar em execute.
 7. Critérios de Êxito: Será os atributos preenchidos e o código 200 Success.
 
-<!-- ### Caso de Teste	= 002 - Fazer login
-### Requisitos Associados: RF-002 Fazer login
+### Caso de Teste	= 002 - Fazer login
+### Requisitos Associados: RF-002 Os Usuarios devem fazer login para acessar o sistema.
 ### Objetivo do Teste	Avaliar:
-Avaliar funcionalidade de login de fornecedores
-método GET{ID}
+Avaliar funcionalidade de login de Usuarios método Post
 ## Passos:
 1. Abrir o projeto no  Visual estúdio e Iniciar Depuração.
-2. swagger informar a URL https://localhost/ .
-3. Acessar o método GET{ID}.
-4. clicar em Try it out, observar o Request Body deve esta em application/json.
-5. inserir os dados email*	string($email) senha*	string($password) .
-6. clicar em execute.
-7. Critérios de Êxito :	.
+2.Swagger URL localhost:7221/swagger/index.html.
+3. Acessar Usuarios Login método Post. Request URL https://localhost:7221/api/Usuarios/login.
+4. Clicar em Try it out, observar o Request Body deve esta em application/json.
+5. Inserir os dados:{"email": "string", "senha": "string"}.
+6. Clicar em execute.
+7. Critérios de Êxito :	Será os atributos preenchidos e o código 200 Success.
 
 
 
-### Caso de Teste	= 003 - Atualizar Cadastro
+<!-- ### Caso de Teste	= 003 - Atualizar Cadastro
 ### Requisitos Associados: RF-001 Cadastro de fornecedores de serviços
 ### Objetivo do Teste	Avaliar:
 Avaliar funcionalidade de Atualizar Cadastro de fornecedores
@@ -42,7 +41,7 @@ método PUT {ID}
 4. clicar em Try it out, observar o Request Body deve esta em application/json.
 5. inserir os dados a serem atualizados  nome, cpf, telefone, e-mail, senha, repetir senha, Cep, logradouro, numero, complemento, bairro cidade, uf.
 6. clicar em execute.
-7.Critérios de Êxito : . -->
+7.Critérios de Êxito :  -->
 
 
 
