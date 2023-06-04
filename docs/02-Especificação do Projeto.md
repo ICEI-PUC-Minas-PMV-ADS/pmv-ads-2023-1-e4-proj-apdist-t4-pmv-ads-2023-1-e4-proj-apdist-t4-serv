@@ -92,7 +92,7 @@ A modelagem do processo de negócio da aplicação pode ser representada pelo se
 
 ### Processo 1 – CADASTRO DE USUÁRIOS
 
-![Processo 1](img/02-bpmn-proc1.png)
+![Processo 1](img/02-bpmn-proc3.png)
 
 
 ## Indicadores de Desempenho
