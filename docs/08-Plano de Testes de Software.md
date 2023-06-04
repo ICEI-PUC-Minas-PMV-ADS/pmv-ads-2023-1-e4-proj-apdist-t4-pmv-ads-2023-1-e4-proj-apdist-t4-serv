@@ -27,6 +27,44 @@ Avaliar funcionalidade de login de Usuarios método Post
 6. Clicar em execute.
 7. Critérios de Êxito :	Será os atributos preenchidos e o código 200 Success.
 
+# Plano de Testes de Software (Banco De Dados Criptografia Senha Usuarios)
+
+A importância dos testes de criptografia de senhas de usuários em bancos de dados:
+no mundo digital atual, a segurança das informações pessoais é uma preocupação crescente. Em um contexto em que os bancos de dados armazenam dados sensíveis, como senhas de usuários, é essencial garantir que essas informações estejam protegidas por meio de criptografia adequada. Nesse sentido, os testes de criptografia de senhas em bancos de dados desempenham um papel crucial na verificação e garantia da segurança das informações pessoais dos usuários.Proteção da confidencialidade dos usuários:
+Os testes de criptografia de senhas têm como objetivo principal proteger a confidencialidade das informações pessoais dos usuários. Ao garantir que as senhas estejam armazenadas de forma criptografada, evita-se que terceiros não autorizados tenham acesso a esses dados sensíveis.
+
+### Caso de Teste	= 003 - (Banco De Dados Criptografia Senha Usuarios)
+
+### Objetivo do Teste	Avaliar:
+Avaliar Segurança no armazenamento de senhas
+## Passos:
+O passo a passo para se conectar ao banco de dados da aplicação e verificar a criptografia das senhas dos usuários utilizando o SQL Server Management Studio:
+
+"ConnectionStrings": {
+    "DefaultConnection": "Data Source=SQL8003.site4now.net;Initial Catalog=db_a98226_servicos;User Id=db_a98226_servicos_admin;Password=M3l0@123"},
+
+1.Abra o SQL Server Management Studio.
+
+Na janela "Connect to Server" (Conectar ao Servidor), 
+
+2.preencha as seguintes informações:
+a.Server type (Tipo de servidor): Selecione "Database Engine" (Mecanismo de Banco de Dados).
+b.Nome do servidor: SQL8003.site4now.net (informação fornecida na ConnectionString).
+c.Authentication (Autenticação): Escolha "SQL Server Authentication" (Autenticação do SQL Server).
+d.Login (Nome de usuário): db_a98226_servicos_admin (informação fornecida na ConnectionString).
+e.Password (Senha): M3l0@123 (informação fornecida na ConnectionString).
+f.Selecione "Remember password" (Lembrar senha) se desejar que o SSMS lembre a senha para futuras conexões.
+
+3.Clique no botão "Connect" (Conectar) para estabelecer a conexão com o servidor.
+
+4.Após a conexão ser estabelecida, navegue até a base de dados "db_a98226_servicos" (informação fornecida na ConnectionString) que contém as informações de usuários e senhas.
+
+5.Selecione Nova Consulta execute SELECT * FROM usuarios;.
+
+6.Verifique as configurações de criptografia aplicadas às colunas de senha.
+
+
+
 
 
 <!-- ### Caso de Teste	= 003 - Atualizar Cadastro
