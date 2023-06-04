@@ -6,9 +6,6 @@ Os testes em APIs REST baseadas em Swagger são fundamentais para garantir a fun
 ### Objetivo do Teste	Avaliar:
 Avaliar funcionalidade de criação de Usuarios método Post
 ## Passos:
-<ul>
-    <
-</ul>
 1. Abrir o projeto no  Visual estúdio e Iniciar Depuração.
 2. Swagger URL localhost:7221/swagger/index.html.
 3. Acessar Usuarios Cadastrar método Post. Request URL https://localhost:7221/api/Usuarios/cadastrar.
