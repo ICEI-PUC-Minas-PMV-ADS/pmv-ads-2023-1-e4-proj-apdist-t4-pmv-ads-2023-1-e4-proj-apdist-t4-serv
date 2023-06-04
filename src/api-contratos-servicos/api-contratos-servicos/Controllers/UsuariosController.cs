@@ -105,6 +105,80 @@ namespace api_contratos_servicos.Controllers
 
         }
 
+        
+        [Route("validaUsername")]
+        [HttpGet]
+        public async Task<ActionResult<String>> validaUsername([Bind("email")] String email)
+        {
+            if (email == null)
+            {
+                return BadRequest();
+            }
+
+            if (_context.Usuarios == null)
+            {
+                return Unauthorized();
+            }
+
+
+            var usuarioLogado = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email);
+
+            if (usuarioLogado == null)
+            {
+                return "OK";
+            }
+
+            return "Usuario já cadastrado";
+
+        }
+
+        [Route("alterarSenha")]
+        [HttpPut]
+        public async Task<ActionResult<String>> alteraSenha(UsuarioAlterarSenhaDTO usuarioSenha)
+        {
+            if (usuarioSenha == null)
+            {
+                return BadRequest();
+            }
+
+            if (_context.Usuarios == null)
+            {
+                return Unauthorized();
+            }
+
+
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == usuarioSenha.Email);
+
+            if (usuario == null || !BCrypt.Net.BCrypt.Verify(usuarioSenha.AntigaSenha, usuario.Senha))
+            {
+                System.Diagnostics.Debug.WriteLine(" nao bateu");
+                return Unauthorized();
+            }
+
+            usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuarioSenha.NovaSenha);
+
+            _context.Entry(usuario).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!UsuarioExists(usuario.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return "Senha alterada com sucesso!";
+
+        }
+
         private string gerarSenha()
         {
             string validar = "abcdefghijklmnozABCDEFGHIJKLMNOZ1234567890@#$%&*!";
@@ -223,12 +297,12 @@ namespace api_contratos_servicos.Controllers
 
             return NoContent();
         }
-
+        */
         private bool UsuarioExists(int id)
         {
             return (_context.Usuarios?.Any(e => e.Id == id)).GetValueOrDefault();
         }
-        */
+        
     }
 
      public class UsuarioLogin
@@ -245,4 +319,27 @@ namespace api_contratos_servicos.Controllers
             return usuario;
         }
     }
+
+    public class UsuarioAlterarSenhaDTO
+    {
+        public string Email { get; set; }
+
+        public string AntigaSenha { get; set; }
+
+        public string NovaSenha { get; set; }
+
+
+
+        public Usuario usuarioAlterarSenhaDTO()
+        {
+            var usuario = new Usuario();
+            usuario.Email = Email;
+            usuario.Senha = NovaSenha;
+            return usuario;
+        }
+    }
+
+
+
+
 }
