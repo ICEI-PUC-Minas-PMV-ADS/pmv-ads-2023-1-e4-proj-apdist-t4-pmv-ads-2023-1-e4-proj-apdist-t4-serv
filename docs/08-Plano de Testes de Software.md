@@ -6,8 +6,11 @@ Os testes em APIs REST baseadas em Swagger são fundamentais para garantir a fun
 ### Objetivo do Teste	Avaliar:
 Avaliar funcionalidade de criação de Usuarios método Post
 ## Passos:
+<ul>
+    <
+</ul>
 1. Abrir o projeto no  Visual estúdio e Iniciar Depuração.
-2.Swagger URL localhost:7221/swagger/index.html.
+2. Swagger URL localhost:7221/swagger/index.html.
 3. Acessar Usuarios Cadastrar método Post. Request URL https://localhost:7221/api/Usuarios/cadastrar.
 4. Clicar em Try it out, observar o Request Body deve esta em application/json.
 5. Inserir os dados:{"nome": "string","email": "string","senha": "string","tipo": "string""cpf": "string","cep": "string", "telefone": "string","logradouro": "string","numero": "string","bairro": "string","cidade": "string","uf": "string"}.
@@ -43,17 +46,17 @@ O passo a passo para se conectar ao banco de dados da aplicação e verificar a 
 "ConnectionStrings": {
     "DefaultConnection": "Data Source=SQL8003.site4now.net;Initial Catalog=db_a98226_servicos;User Id=db_a98226_servicos_admin;Password=M3l0@123"},
 
-1.Abra o SQL Server Management Studio.
+1. Abra o SQL Server Management Studio.
 
 Na janela "Connect to Server" (Conectar ao Servidor), 
 
-2.preencha as seguintes informações:
-3.Server type (Tipo de servidor): Selecione "Database Engine" (Mecanismo de Banco de Dados).
-4.Nome do servidor: SQL8003.site4now.net (informação fornecida na ConnectionString).
-5.Authentication (Autenticação): Escolha "SQL Server Authentication" (Autenticação do SQL Server).
-6.Login (Nome de usuário): db_a98226_servicos_admin (informação fornecida na ConnectionString).
-7.Password (Senha): M3l0@123 (informação fornecida na ConnectionString).
-8.Selecione "Remember password" (Lembrar senha) se desejar que o SSMS lembre a senha para futuras conexões.
+2. preencha as seguintes informações:
+3. Server type (Tipo de servidor): Selecione "Database Engine" (Mecanismo de Banco de Dados).
+4. Nome do servidor: SQL8003.site4now.net (informação fornecida na ConnectionString).
+5. Authentication (Autenticação): Escolha "SQL Server Authentication" (Autenticação do SQL Server).
+6. Login (Nome de usuário): db_a98226_servicos_admin (informação fornecida na ConnectionString).
+7. Password (Senha): M3l0@123 (informação fornecida na ConnectionString).
+8. Selecione "Remember password" (Lembrar senha) se desejar que o SSMS lembre a senha para futuras conexões.
 
 9.Clique no botão "Connect" (Conectar) para estabelecer a conexão com o servidor.
 
