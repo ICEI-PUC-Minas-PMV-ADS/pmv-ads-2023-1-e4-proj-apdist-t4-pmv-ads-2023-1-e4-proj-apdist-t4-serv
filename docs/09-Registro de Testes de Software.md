@@ -59,7 +59,22 @@ Por fim, recebemos a resposta da API, como mostrado na imagem "API-Usuarios-Logi
 
 Esses testes demonstram que o processo de login de usuários está funcionando conforme esperado, permitindo que os usuários ingressem no sistema com suas credenciais corretas.
 
+## Caso de Teste = 003 - (Banco De Dados Criptografia Senha Usuarios)
+
+### Conectar ao Banco De Dados
+![Conectar-Ao-Banco-De-Dados-Da-Aplicação-Utilizando-SQL-Server-Management-Studio.]
+(img/Conectar-Ao-Banco-De-Dados-Da-Aplicação-Utilizando-SQL-Server-Management-Studio.png)
+
+### Conectado ao banco de dados
+![Usuarios-Login-Preencher](img/Conectado-Ao-Banco-De-Dados.png)
 
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+### Consulta banco de dados usuarios
+![Consulta-Banco-De-Dados-Usuarios](img/Consulta-Banco-De-Dados-Usuarios.png)
+
+## Avaliação
+Os casos de teste 003 - 003 - (Banco De Dados Criptografia Senha Usuarios) -  foram realizados com êxito, 
+Com base nos resultados obtidos no teste realizado no banco de dados, podemos concluir que as senhas dos usuários estão devidamente criptografadas e protegidas. A implementação de medidas de segurança, como a escolha de algoritmos de criptografia confiáveis e a utilização de técnicas de salting, garante a integridade dos dados confidenciais e previne o acesso não autorizado.
+
+
+
