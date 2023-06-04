@@ -31,6 +31,35 @@ Por fim, recebemos a resposta da API em questão, conforme mostrado na imagem "A
 
 Esses testes demonstram que o processo de cadastro de usuários está funcionando conforme esperado, permitindo que novos usuários sejam registrados com sucesso no sistema.
 
+## Caso de Teste = 002 - Login
+
+### API-Serivicos
+![API-Serivicos](img/API-Serivicos.jpeg)
+
+### Usuarios-Login-Preencher
+![Usuarios-Login-Preencher](img/API-Usuarios-Login-Preencher.jpeg)
+
+
+### API-Usuarios-Login-Com-Dados
+![API-Usuarios-Login-Com-Dados](img/API-Usuarios-Login-Com-Dados.jpeg)
+
+### API-Usuarios-Login-Resposta
+![API-Usuarios-Login-Resposta](img/API-Usuarios-Login-Resposta.jpeg)
+
+## Avaliação
+Os casos de teste 002 - Fazer login e 002 - Login foram realizados com êxito, retornando o código de status HTTP 200.
+
+Durante os testes, foram utilizadas as seguintes APIs relacionadas ao login de usuários. A imagem "API-Servicos" mostra uma visão geral desses serviços.
+
+O primeiro passo consistiu em preencher os dados de login na API "Usuarios-Login-Preencher", conforme mostrado na imagem correspondente.
+
+Em seguida, utilizamos a API "API-Usuarios-Login-Com-Dados" para enviar os dados preenchidos. A imagem "API-Usuarios-Login-Com-Dados" apresenta detalhes dessa etapa.
+
+Por fim, recebemos a resposta da API, como mostrado na imagem "API-Usuarios-Login-Resposta". Essa resposta confirma o sucesso do login, uma vez que o código de status 200 foi retornado.
+
+Esses testes demonstram que o processo de login de usuários está funcionando conforme esperado, permitindo que os usuários ingressem no sistema com suas credenciais corretas.
+
+
 
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
