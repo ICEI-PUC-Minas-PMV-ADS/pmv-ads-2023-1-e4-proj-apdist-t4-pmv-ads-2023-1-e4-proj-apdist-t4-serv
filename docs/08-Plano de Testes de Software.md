@@ -10,10 +10,9 @@ Avaliar funcionalidade de criação de Usuarios método Post
 2.Swagger URL localhost:7221/swagger/index.html.
 3. Acessar Usuarios Cadastrar método Post. Request URL https://localhost:7221/api/Usuarios/cadastrar.
 4. clicar em Try it out, observar o Request Body deve esta em application/json.
-5. inserir os dados:{"nome": "string","email": "string","senha": "string","tipo": "string""cpf": "string","cep": "string", "telefone": "string","logradouro": "string","numero": "string","bairro": "string","cidade": "string","uf": "string"}
+5. inserir os dados:{"nome": "string","email": "string","senha": "string","tipo": "string""cpf": "string","cep": "string", "telefone": "string","logradouro": "string","numero": "string","bairro": "string","cidade": "string","uf": "string"}.
 6. clicar em execute.
-### Critérios de Êxito :	
-Será os atributos preenchidos e o código 200 Success.
+7. Critérios de Êxito: Será os atributos preenchidos e o código 200 Success.
 
 ### Caso de Teste	= 002 - Fazer login
 ### Requisitos Associados: RF-002 Fazer login
