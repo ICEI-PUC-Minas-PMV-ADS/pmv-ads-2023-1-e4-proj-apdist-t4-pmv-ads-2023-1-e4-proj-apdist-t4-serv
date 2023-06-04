@@ -26,7 +26,7 @@ método GET{ID}
 4. clicar em Try it out, observar o Request Body deve esta em application/json.
 5. inserir os dados email*	string($email) senha*	string($password) .
 6. clicar em execute.
-### Critérios de Êxito :	
+7. Critérios de Êxito :	
 Será os atributos preenchidos e o código 201.
 
 
@@ -42,7 +42,7 @@ método PUT {ID}
 4. clicar em Try it out, observar o Request Body deve esta em application/json.
 5. inserir os dados a serem atualizados  nome, cpf, telefone, e-mail, senha, repetir senha, Cep, logradouro, numero, complemento, bairro cidade, uf.
 6. clicar em execute.
-### Critérios de Êxito :	
+7.Critérios de Êxito :	
 Será os atributos preenchidos e o código 201.
 
 
