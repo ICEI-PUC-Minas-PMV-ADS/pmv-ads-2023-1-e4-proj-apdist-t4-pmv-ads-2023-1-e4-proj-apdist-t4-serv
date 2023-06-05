@@ -22,7 +22,7 @@ Realização de testes com usuários definindo as operações que os usuários d
 |------|-----------------------------------------|
 |Requisitos associados |RNF -004 Segurança: o aplicativo deve ser seguro e proteger as informações pessoais e financeiras dos usuários.	
 |Objetivo do teste | Garantir segurança dos dados dos usuários. 
-|Conclusão | <ul><li>### Consulta banco de dados usuarios![Consulta-Banco-De-Dados-Usuarios](img/Consulta-Banco-De-Dados-Usuarios.png)
+|Conclusão | <ul><li>Dados dos usuários sendo devidamente criptografados e protegidos.[Consulta-Banco-De-Dados-Usuarios](img/Consulta-Banco-De-Dados-Usuarios.png)
 Podemos concluir que as senhas dos usuários estão devidamente criptografadas e protegidas. A implementação de medidas de segurança, como a escolha de algoritmos de criptografia confiáveis e a utilização de técnicas de salting, garante a integridade dos dados confidenciais e previne o acesso não autorizado.Sistema protegendo dados dos usuários</li></ul>
 
 
