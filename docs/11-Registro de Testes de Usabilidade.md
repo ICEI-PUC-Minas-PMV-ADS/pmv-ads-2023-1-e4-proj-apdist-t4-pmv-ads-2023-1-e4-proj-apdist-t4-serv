@@ -30,6 +30,6 @@ Podemos concluir que as senhas dos usuários estão devidamente criptografadas e
 |------|-----------------------------------------|
 |Requisitos associados |RNF -005 Escalabilidade: o aplicativo deve ser capaz de lidar com um grande número de usuários e fornecedores de serviços, sem comprometer o desempenho e a usabilidade.	
 |Objetivo do teste | Garantir perfomance da aplicação. 
-|Conclusão | <ul><li>Sistema perfomando com alto número de usuários.</li></ul>
+|Conclusão | <ul><li>Sistema realizando alta perfomanceo com alto número de usuários.</li></ul>
 
 
