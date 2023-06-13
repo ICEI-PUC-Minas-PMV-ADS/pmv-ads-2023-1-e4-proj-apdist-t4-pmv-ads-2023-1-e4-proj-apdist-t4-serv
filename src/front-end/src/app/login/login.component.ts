@@ -20,21 +20,18 @@ export class LoginComponent {
    }
 
   onSubmit(){
-    console.log(`User: ${this.username}, Pass: ${this.password}`)
     if (this.username && this.password) {
       this.authService
                   .tentarLogar(this.username, this.password)
                   .subscribe( {
                     next: (response) =>{
-                      console.log(response);
                       const access_token = JSON.stringify(response);
                       localStorage.setItem('access_token',access_token);
                       this.router.navigate(['/sistema/principal']);
-                    }, 
+                    },
                     error: (errorResponse) => {
                       console.log(errorResponse);
                       this.errors = ['Usuário e/ou senha incorreto(s).']
-
                     }
                   });
     } else {

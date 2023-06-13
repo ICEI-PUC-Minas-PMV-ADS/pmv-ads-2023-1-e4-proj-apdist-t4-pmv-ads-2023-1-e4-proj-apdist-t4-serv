@@ -16,15 +16,27 @@ namespace api_contratos_servicos.Models
         public string TipoServico { get; set; }
 
         [Required(ErrorMessage = "Obrigatório Informar a Data!")]
-        LocalDataStoreSlot  Data { get; set; }
+        public DateTime Data { get; set; }
 
         [Required(ErrorMessage = "Obrigatório Informar a Descrição!")]
         public string Descricao { get; set; }
 
-      
+
+        [Required(ErrorMessage = "Obrigatório Informar o Status!")]
+        public StatusPedido Status { get; set; }
+
+
         public int UsuarioId { get; set; }
         /*
         [ForeignKey("UsuarioId")]
         public Usuario Usuario { get; set; }*/
+    }
+
+
+    public enum StatusPedido
+    {
+        Pendente,
+        Aprovado,
+        Rejeitado
     }
 }

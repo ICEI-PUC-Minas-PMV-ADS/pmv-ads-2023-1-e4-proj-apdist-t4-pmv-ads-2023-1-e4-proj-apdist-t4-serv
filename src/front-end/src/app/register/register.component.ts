@@ -28,7 +28,6 @@ export class RegisterComponent {
   }
 
   consultaCep(){
-    console.log(this.usuarioRegistro.cep);
     if (this.usuarioRegistro.cep) {
       this.cepService.buscar(this.usuarioRegistro.cep).subscribe((dados) => this.populaForm(dados))
     }
@@ -47,9 +46,8 @@ export class RegisterComponent {
                   .salvar(this.usuarioRegistro)
                   .subscribe( {
                     next: (response) =>{
-                      console.log(response);
                       this.router.navigate(['/login']);
-                    }, 
+                    },
                     error: (errorResponse) => {
                       console.log(errorResponse);
                       this.errors = ['Erro ao cadastrar usuario.']

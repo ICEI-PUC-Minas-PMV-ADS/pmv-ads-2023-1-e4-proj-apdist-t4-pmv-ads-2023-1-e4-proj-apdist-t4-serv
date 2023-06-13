@@ -10,10 +10,10 @@ import { UsuarioRegistro } from './register/usuarioRegistro';
   providedIn: 'root'
 })
 export class AuthService {
-  apiURL: string = environment.apiURLBase + "/Usuarios/cadastrar";
-  tokenURL: string = environment.apiURLBase + "/Usuarios/login";
+  private readonly apiURL: string = environment.apiURLBase + "/Usuarios/cadastrar";
+  private readonly tokenURL: string = environment.apiURLBase + "/Usuarios/login";
   jwtHelper: JwtHelperService = new JwtHelperService();
-  
+
   constructor(
     private http: HttpClient
   ) { }
@@ -22,7 +22,7 @@ export class AuthService {
     const tokenString = localStorage.getItem('access_token');
     if (tokenString) {
       const token = JSON.parse(tokenString).token;
-      return token;      
+      return token;
     }
     return null;
   }
@@ -34,17 +34,26 @@ export class AuthService {
   getUsuarioAutenticado(){
     const token = this.obterToken();
     if (token) {
-      const usuario = this.jwtHelper.decodeToken(token).user_name;
-      return usuario;      
+      const usuario = this.jwtHelper.decodeToken(token).email;
+      return usuario;
     }
     return null;
+  }
+
+  getUsuarioId(): number{
+    const token = this.obterToken();
+    if (token) {
+      const usuarioId: number = this.jwtHelper.decodeToken(token).nameid;
+      return usuarioId;
+    }
+    return 0;
   }
 
   isAutheticated(): boolean{
     const token = this.obterToken();
     if (token) {
       const expired = this.jwtHelper.isTokenExpired(token);
-      return !expired;      
+      return !expired;
     }
     return false;
   }
