@@ -3,7 +3,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-A metodologia de desenvolvimento utilizada é o Scrum, uma metodologia ágil utilizada no desenvolvimento de Software baseada em processos interativos e incrementais. A equipe adaptou o Scrum levando em consideração as necessidades do projeto e a disponibilidade dos membros. A equipe se comunica por meio de mensagens no WhatsApp, grupo do projeto e reuniões no Teams para tomadas de decisões.
+A metodologia de desenvolvimento utilizada é o Scrum, uma metodologia ágil utilizada no desenvolvimento de Software baseada em processos interativos e incrementais. A equipe adaptou o Scrum levando em consideração as necessidades do projeto e a disponibilidade dos membros. A equipe se comunica por meio do WhatsApp, grupo do projeto e reuniões no Teams para tomadas de decisões.
 
 ## Relação de Ambientes de Trabalho
 
