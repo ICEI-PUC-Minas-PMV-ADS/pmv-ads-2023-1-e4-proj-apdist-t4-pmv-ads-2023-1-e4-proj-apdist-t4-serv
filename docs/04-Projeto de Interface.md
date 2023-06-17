@@ -13,8 +13,8 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 |--|-------------------------------------------------------|----------------------|
 |Cadastro de usuário | O usuário deve conseguir realizar cadastro na aplicação dividido em fornecedor e cliente| RF-01 |
 |Lista pré-estabelecida de serviços| O usuário fornecedor no ato do cadastro deverá selecioanar o serviço oferecido e usuário cliente no momento da solicitação deverá selecionar serviço desejado| RF-02 |
-|Solicitar Orçamento e envio de proposta|O usuário deverá ter efetuado login, o usuário cliente deverá preencher as informações da solicitação de serviço. O usuário fornecedor irá analisar a solicitação e enviará proposta| RF-03 || RF-04| |
-|Fazer agendamento|O usuário cliente deverá ter efetuado login, irá clicar em agendar o serviço | RF-05 || RF-06 | |
+|Solicitar Orçamento e envio de proposta|O usuário deverá ter efetuado login , o usuário cliente deverá preencher as informações da solicitação de serviço. O usuário fornecedor irá analisar a solicitação e enviará proposta| RF-03 || RF-04| |
+|Fazer agendamento|O usuário cliente deverá ter efetuado login , irá clicar em agendar o serviço | RF-05 || RF-06 | |
 
 
 ![Exemplo de Diagrama de Fluxo](../docs/img/Fluxograma%20usu%C3%A1rio%20cliente%20ou%20fornecedor.png )
