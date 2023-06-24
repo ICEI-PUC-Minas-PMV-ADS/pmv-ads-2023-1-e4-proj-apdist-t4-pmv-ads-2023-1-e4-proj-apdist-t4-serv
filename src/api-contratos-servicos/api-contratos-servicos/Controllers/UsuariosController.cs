@@ -10,7 +10,7 @@ using System.Text;
 namespace api_contratos_servicos.Controllers
 {
     [Route("api/[controller]")]
-    [AllowAnonymous]
+    [Authorize]
     [ApiController]
     public class UsuariosController : ControllerBase
     {
@@ -22,6 +22,7 @@ namespace api_contratos_servicos.Controllers
         }
 
         [Route("login")]
+        [AllowAnonymous]
         [HttpPost]
         public async Task<ActionResult<UsuarioRespostaDTO>> Login([Bind("Email,Senha")]  UsuarioLogin usuario)
         {
@@ -53,6 +54,7 @@ namespace api_contratos_servicos.Controllers
 
 
         [Route("cadastrar")]
+        [AllowAnonymous]
         [HttpPost]
         public async Task<ActionResult<UsuarioRespostaDTO>> Cadastrar([Bind("Nome,Email,Senha,Tipo,Cpf,Cep,Telefone,Logradouro,Numero,Bairro,Cidade,UF")] UsuarioDTO usuarioDTO
             )

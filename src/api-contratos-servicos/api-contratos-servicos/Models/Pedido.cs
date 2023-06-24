@@ -23,7 +23,7 @@ namespace api_contratos_servicos.Models
 
 
         [Required(ErrorMessage = "Obrigatório Informar o Status!")]
-        public StatusPedido Status { get; set; }
+        public string Status { get; set; }
 
 
         public int UsuarioId { get; set; }
@@ -33,10 +33,4 @@ namespace api_contratos_servicos.Models
     }
 
 
-    public enum StatusPedido
-    {
-        Pendente,
-        Aprovado,
-        Rejeitado
-    }
 }

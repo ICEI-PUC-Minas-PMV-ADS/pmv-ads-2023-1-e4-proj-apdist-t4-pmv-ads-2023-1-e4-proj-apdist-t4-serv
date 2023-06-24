@@ -15,7 +15,6 @@ namespace api_contratos_servicos.Controllers
     [ApiController]
     [Authorize]
 
-    [Authorize]
     public class OrcamentosController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

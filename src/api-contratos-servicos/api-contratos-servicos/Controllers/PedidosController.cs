@@ -13,6 +13,7 @@ namespace api_contratos_servicos.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class PedidosController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -94,6 +95,7 @@ namespace api_contratos_servicos.Controllers
           {
               return Problem("Entity set 'ApplicationDbContext.Pedidos'  is null.");
           }
+            pedido.Status = "Pendente";
             _context.Pedidos.Add(pedido);
             await _context.SaveChangesAsync();
 

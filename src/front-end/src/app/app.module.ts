@@ -14,7 +14,7 @@ import { AuthService } from './auth.service';
 import { TokenInterceptor } from './token.interceptor';
 import { NgxMaskModule } from "ngx-mask";
 import { PrincipalComponent } from './principal/principal.component';
-import { ListarPedidosComponent } from './pedidos/listar-pedidos/listar-pedidos.component';
+import { PedidosModule } from './pedidos/pedidos.module';
 
 @NgModule({
   declarations: [
@@ -24,13 +24,13 @@ import { ListarPedidosComponent } from './pedidos/listar-pedidos/listar-pedidos.
     HomeComponent,
     RegisterComponent,
     PrincipalComponent,
-    ListarPedidosComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     NgxMaskModule.forRoot(),
+    PedidosModule,
     AppRoutingModule,
     TemplateModule
   ],
