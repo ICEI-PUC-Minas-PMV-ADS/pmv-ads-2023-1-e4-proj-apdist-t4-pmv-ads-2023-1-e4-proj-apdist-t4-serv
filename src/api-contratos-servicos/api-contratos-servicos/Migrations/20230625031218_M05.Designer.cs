@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api_contratos_servicos.Context;
 
@@ -11,9 +12,11 @@ using api_contratos_servicos.Context;
 namespace api_contratos_servicos.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230625031218_M05")]
+    partial class M05
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -124,21 +127,6 @@ namespace api_contratos_servicos.Migrations
                     b.ToTable("Fornecedores");
                 });
 
-            modelBuilder.Entity("api_contratos_servicos.Models.FornecedorTipoServico", b =>
-                {
-                    b.Property<int>("FornecedorId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TipoServicoId")
-                        .HasColumnType("int");
-
-                    b.HasKey("FornecedorId", "TipoServicoId");
-
-                    b.HasIndex("TipoServicoId");
-
-                    b.ToTable("FornecedorTipoServico");
-                });
-
             modelBuilder.Entity("api_contratos_servicos.Models.Orcamento", b =>
                 {
                     b.Property<int>("Id")
@@ -147,25 +135,27 @@ namespace api_contratos_servicos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("PedidoId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Status")
+                    b.Property<string>("Data")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
+                    b.Property<string>("Fornecedor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("ValorOrcamento")
-                        .HasColumnType("float");
+                    b.Property<string>("Pedido")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ValorOrcamento")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("orcamentoAprovado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Orcamento");
                 });
@@ -177,6 +167,10 @@ namespace api_contratos_servicos.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Cliente")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
@@ -309,36 +303,6 @@ namespace api_contratos_servicos.Migrations
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("api_contratos_servicos.Models.FornecedorTipoServico", b =>
-                {
-                    b.HasOne("api_contratos_servicos.Models.Fornecedor", "Fornecedor")
-                        .WithMany("FornecedorTipoServico")
-                        .HasForeignKey("FornecedorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("api_contratos_servicos.Models.TipoServico", "TipoServico")
-                        .WithMany("FornecedorTipoServico")
-                        .HasForeignKey("TipoServicoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Fornecedor");
-
-                    b.Navigation("TipoServico");
-                });
-
-            modelBuilder.Entity("api_contratos_servicos.Models.Orcamento", b =>
-                {
-                    b.HasOne("api_contratos_servicos.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
-                });
-
             modelBuilder.Entity("api_contratos_servicos.Models.Pedido", b =>
                 {
                     b.HasOne("api_contratos_servicos.Models.TipoServico", "TipoServico")
@@ -356,16 +320,6 @@ namespace api_contratos_servicos.Migrations
                     b.Navigation("TipoServico");
 
                     b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("api_contratos_servicos.Models.Fornecedor", b =>
-                {
-                    b.Navigation("FornecedorTipoServico");
-                });
-
-            modelBuilder.Entity("api_contratos_servicos.Models.TipoServico", b =>
-                {
-                    b.Navigation("FornecedorTipoServico");
                 });
 
             modelBuilder.Entity("api_contratos_servicos.Models.Usuario", b =>

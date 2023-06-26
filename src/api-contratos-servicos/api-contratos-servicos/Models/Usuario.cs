@@ -24,6 +24,12 @@ namespace api_contratos_servicos.Models
         [Required(ErrorMessage = "Obrigatório Informar a senha!")]
         public string Role { get; set; }
 
+        [JsonIgnore]
+        public Cliente Cliente { get; set; }
+
+        [JsonIgnore]
+        public Fornecedor Fornecedor { get; set; }
+
         public Usuario(string Nome, string Email,String Senha, String Role)
         {
             this.Senha = Senha;

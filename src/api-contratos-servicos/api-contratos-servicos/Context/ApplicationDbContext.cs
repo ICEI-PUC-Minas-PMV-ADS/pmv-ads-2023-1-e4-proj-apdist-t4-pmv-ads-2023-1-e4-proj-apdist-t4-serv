@@ -24,5 +24,13 @@ namespace api_contratos_servicos.Context
 
         public DbSet<Servico> Servicos { get; set; }
 
+        public DbSet<FornecedorTipoServico> FornecedorTipoServico { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<FornecedorTipoServico>().HasKey(sc =>
+                new { sc.FornecedorId, sc.TipoServicoId });
+        }
+
     }
 }

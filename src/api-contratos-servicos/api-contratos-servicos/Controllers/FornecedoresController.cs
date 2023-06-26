@@ -31,7 +31,10 @@ namespace api_contratos_servicos.Controllers
           {
               return NotFound();
           }
-            return await _context.Fornecedores.ToListAsync();
+            return await _context.Fornecedores
+                .Include(x => x.Usuario)
+                .Include(l => l.ListaTipoServico)
+                .ToListAsync();
         }
 
         // GET: api/Fornecedores/5
@@ -42,7 +45,10 @@ namespace api_contratos_servicos.Controllers
           {
               return NotFound();
           }
-            var fornecedor = await _context.Fornecedores.FindAsync(id);
+            var fornecedor = _context.Fornecedores
+                .Where(f => f.Id == id)
+                .Include(l => l.ListaTipoServico)
+                .FirstOrDefault();
 
             if (fornecedor == null)
             {

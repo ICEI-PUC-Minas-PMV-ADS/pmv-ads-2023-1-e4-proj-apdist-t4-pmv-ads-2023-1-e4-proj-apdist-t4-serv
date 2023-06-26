@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using api_contratos_servicos.Context;
 using api_contratos_servicos.Models;
 using Microsoft.AspNetCore.Authorization;
+using api_contratos_servicos.Models.Dto;
 
 namespace api_contratos_servicos.Controllers
 {
@@ -32,7 +33,12 @@ namespace api_contratos_servicos.Controllers
           {
               return NotFound();
           }
-            var pedido = await _context.Pedidos.FindAsync(id);
+            //var pedido = await _context.Pedidos.FindAsync(id);
+
+            var pedido = _context.Pedidos
+                .Where(p => p.Id == id)
+                .Include(p => p.TipoServico)
+                .FirstOrDefault();
 
             if (pedido == null)
             {
@@ -52,7 +58,10 @@ namespace api_contratos_servicos.Controllers
             }
             
 
-            return await _context.Pedidos.Where(x => x.UsuarioId == id).ToListAsync();
+            return await _context.Pedidos
+                .Where(x => x.UsuarioId == id)
+                .Include(p => p.TipoServico)
+                .ToListAsync();
         }
 
         // PUT: api/Pedidos/5
@@ -86,41 +95,109 @@ namespace api_contratos_servicos.Controllers
             return NoContent();
         }
 
-        // POST: api/Pedidos
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Pedido>> PostPedido(Pedido pedido)
-        {
-          if (_context.Pedidos == null)
-          {
-              return Problem("Entity set 'ApplicationDbContext.Pedidos'  is null.");
-          }
-            pedido.Status = "Pendente";
-            _context.Pedidos.Add(pedido);
-            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPedido", new { id = pedido.Id }, pedido);
-        }
-        /*
-        // DELETE: api/Pedidos/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePedido(int id)
+
+        [HttpPost("{id}/enviar")]
+        public async Task<IActionResult> EnviarPedido(int id)
         {
             if (_context.Pedidos == null)
             {
                 return NotFound();
             }
-            var pedido = await _context.Pedidos.FindAsync(id);
+            var pedido = _context.Pedidos
+                .Where(p => p.Id == id)
+                .FirstOrDefault();
+
             if (pedido == null)
             {
                 return NotFound();
             }
 
-            _context.Pedidos.Remove(pedido);
-            await _context.SaveChangesAsync();
+            pedido.Status = "Pendente";
+
+            _context.Entry(pedido).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!PedidoExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
             return NoContent();
-        }*/
+        }
+
+        [HttpDelete("{id}/cancelar")]
+        public async Task<IActionResult> CancelarPedido(int id)
+        {
+            if (_context.Pedidos == null)
+            {
+                return NotFound();
+            }
+            var pedido = _context.Pedidos
+                .Where(p => p.Id == id)
+                .FirstOrDefault();
+
+            if (pedido == null)
+            {
+                return NotFound();
+            }
+
+            pedido.Status = "Cancelado";
+
+            _context.Entry(pedido).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!PedidoExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // POST: api/Pedidos
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost]
+        public async Task<ActionResult<Pedido>> PostPedido(PedidoDTO pedido)
+        {
+          if (_context.Pedidos == null)
+          {
+              return Problem("Entity set 'ApplicationDbContext.Pedidos'  is null.");
+          }
+            var newPedido = new Pedido
+            {
+                Status = "Novo",
+                Data = DateTime.UtcNow,
+                TipoServicoId = pedido.TipoServico.Id,
+                Descricao = pedido.Descricao,
+                UsuarioId = pedido.UsuarioId
+            };
+
+            _context.Pedidos.Add(newPedido);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetPedido", new { id = newPedido.Id }, newPedido);
+        }
 
         private bool PedidoExists(int id)
         {

@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace api_contratos_servicos.Models
 {
@@ -32,6 +33,8 @@ namespace api_contratos_servicos.Models
 
         [Required(ErrorMessage = "Obrigatório Informar o CEP!")]
         public string CEP { get; set; }
+
+        public Usuario Usuario { get; set; }
 
         public int UsuarioId { get; set; }
         /*

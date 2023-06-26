@@ -31,7 +31,9 @@ namespace api_contratos_servicos.Controllers
           {
               return NotFound();
           }
-            return await _context.Clientes.ToListAsync();
+            return await _context.Clientes
+                .Include(x => x.Usuario)
+                .ToListAsync();
         }
 
         // GET: api/Clientes/5

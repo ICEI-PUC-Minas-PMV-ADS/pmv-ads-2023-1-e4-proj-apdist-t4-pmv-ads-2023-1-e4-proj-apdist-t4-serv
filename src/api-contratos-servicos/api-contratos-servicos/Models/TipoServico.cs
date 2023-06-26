@@ -12,5 +12,7 @@ namespace api_contratos_servicos.Models
         [Required(ErrorMessage = "Obrigatório Informar a Descricao do Tipo de Serviço!")]
         public string descricaoServico { get; set; }
 
+        public virtual ICollection<FornecedorTipoServico> FornecedorTipoServico { get; set; }
+
     }
 }

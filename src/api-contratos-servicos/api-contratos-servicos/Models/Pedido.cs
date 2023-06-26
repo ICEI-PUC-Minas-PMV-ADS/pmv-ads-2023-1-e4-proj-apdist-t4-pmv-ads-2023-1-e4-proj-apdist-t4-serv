@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace api_contratos_servicos.Models
 {
@@ -9,11 +10,12 @@ namespace api_contratos_servicos.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório Informar o Cliente!")]
-        public string Cliente { get; set; }
-
         [Required(ErrorMessage = "Obrigatório Informar o Tipo De Serviço!")]
-        public string TipoServico { get; set; }
+
+        public TipoServico TipoServico { get; set; }
+
+        [JsonIgnore]
+        public int TipoServicoId { get; set; }
 
         [Required(ErrorMessage = "Obrigatório Informar a Data!")]
         public DateTime Data { get; set; }
@@ -25,11 +27,11 @@ namespace api_contratos_servicos.Models
         [Required(ErrorMessage = "Obrigatório Informar o Status!")]
         public string Status { get; set; }
 
+        [JsonIgnore]
+        public Usuario Usuario { get; set; }
 
         public int UsuarioId { get; set; }
-        /*
-        [ForeignKey("UsuarioId")]
-        public Usuario Usuario { get; set; }*/
+
     }
 
 
