@@ -11,19 +11,53 @@ import { AuthService } from 'src/app/auth.service';
 export class ListarPedidosComponent {
 
   listaPedidos: Pedido[] = [];
+  pedidoSelecionado!: Pedido;
+  acao: string = '';
+  tituloModal: string = '';
+  tituloBotaoModal: string = '';
 
   constructor(
-    private pedidService: PedidoService,
+    private pedidoService: PedidoService,
     private authService: AuthService,
 
     ) { }
 
   ngOnInit(): void {
-    console.log("Entroua!!!")
-    this.pedidService.listar(this.authService.getUsuarioId()).subscribe((listaPedidos)=> {
+    this.pedidoService.listar(this.authService.getUsuarioId()).subscribe((listaPedidos)=> {
       this.listaPedidos = listaPedidos;
     });
+  }
+
+  prepararPedidoParaAcao(pedido: Pedido, acao: string) {
+    this.pedidoSelecionado = pedido;
+    this.acao = acao;
+    this.tituloModal = `Deseja realmente ${acao[0].toUpperCase() + acao.substr(1)} este pedido?`;
+    this.tituloBotaoModal = acao[0].toUpperCase() + acao.substr(1);
+  }
+
+  acaoModal(){
+    if (this.acao && this.pedidoSelecionado && this.pedidoSelecionado.id){
+      if(this.acao === 'cancelar'){
+        this.pedidoService.cancelar(this.pedidoSelecionado.id).subscribe(()=>{
+          console.log("cancelou");
+          this.ngOnInit();
+        });
+      }
+      if(this.acao === 'cancelar'){
+        this.pedidoService.cancelar(this.pedidoSelecionado.id).subscribe(()=>{
+          console.log("cancelou");
+          this.ngOnInit();
+        });
+      }
+      if(this.acao === 'enviar'){
+        this.pedidoService.enviar(this.pedidoSelecionado.id).subscribe(()=>{
+          console.log("enviou");
+          this.ngOnInit();
+        });
+      }
+    }
 
   }
+
 
 }

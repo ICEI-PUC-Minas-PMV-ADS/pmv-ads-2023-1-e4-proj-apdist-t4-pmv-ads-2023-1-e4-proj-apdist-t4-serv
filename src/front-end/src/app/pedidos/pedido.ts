@@ -1,8 +1,10 @@
+import { TipoServico } from "../tipo-servicos";
+
 export interface Pedido {
-  id?: number
-  cliente: string
-  tipoServico: string
-  descricao : string
+  id?: number;
+  tipoServico: TipoServico;
+  descricao : string;
   usuarioId: number;
   status: string;
+  data: Date;
 }

@@ -8,6 +8,7 @@ import { ListarPedidosComponent } from './listar-pedidos/listar-pedidos.componen
 const routes: Routes = [
   {path: 'pedidos', component: LayoutComponent, children: [
     {path: 'novo', component: CriarPedidosComponent, canActivate: [authGuard]},
+    {path: 'editar/:id', component: CriarPedidosComponent, canActivate: [authGuard]},
     {path: 'listar', component: ListarPedidosComponent, canActivate: [authGuard]},
     {path: '',redirectTo: '/pedidos/listar', pathMatch: 'full'}
   ]}

@@ -1,4 +1,3 @@
-import { Usuario } from './../login/usuario';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -10,7 +9,7 @@ import { Pedido } from './pedido';
 })
 export class PedidoService {
 
-  private readonly apiURL: string = environment.apiURLBase + "/Pedidos/usuario";
+  private readonly apiURL: string = environment.apiURLBase + "/Pedidos";
 
 
   constructor(
@@ -18,8 +17,33 @@ export class PedidoService {
   ) { }
 
   listar(usuarioId: number): Observable<Pedido[]>{
-    const url = `${this.apiURL}/${usuarioId}`
+    const url = `${this.apiURL}/usuario/${usuarioId}`
     return this.http.get<Pedido[]>(url);
+  }
+
+  criar(pedido: Pedido): Observable<Pedido> {
+    const url = `${this.apiURL}`
+    return this.http.post<Pedido>(url, pedido);
+  }
+
+  editar(pedido: Pedido): Observable<Pedido> {
+    const url = `${this.apiURL}/${pedido.id}`
+    return this.http.put<Pedido>(url, pedido);
+  }
+
+  buscarPorId(id: number): Observable<Pedido> {
+    const url = `${this.apiURL}/${id}`
+    return this.http.get<Pedido>(url);
+  }
+
+  enviar(id: number): Observable<Pedido> {
+    const url = `${this.apiURL}/${id}/enviar`
+    return this.http.post<Pedido>(url, null);
+  }
+
+  cancelar(id: number): Observable<Pedido> {
+    const url = `${this.apiURL}/${id}/cancelar`
+    return this.http.delete<Pedido>(url);
   }
 
 
