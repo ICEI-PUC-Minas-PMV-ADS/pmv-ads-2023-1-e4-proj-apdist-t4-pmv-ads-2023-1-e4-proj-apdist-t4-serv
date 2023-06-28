@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace api_contratos_servicos.Models
 {
@@ -12,6 +13,7 @@ namespace api_contratos_servicos.Models
         [Required(ErrorMessage = "Obrigatório Informar a Descricao do Tipo de Serviço!")]
         public string descricaoServico { get; set; }
 
+        [JsonIgnore]
         public virtual ICollection<FornecedorTipoServico> FornecedorTipoServico { get; set; }
 
     }

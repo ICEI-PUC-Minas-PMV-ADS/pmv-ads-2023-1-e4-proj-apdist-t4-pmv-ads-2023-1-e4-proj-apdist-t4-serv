@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using api_contratos_servicos.Context;
 using api_contratos_servicos.Models;
 using Microsoft.AspNetCore.Authorization;
+using api_contratos_servicos.Models.Dto;
 
 namespace api_contratos_servicos.Controllers
 {
@@ -24,64 +25,109 @@ namespace api_contratos_servicos.Controllers
             _context = context;
         }
 
-        // GET: api/Orcamentos
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Orcamento>>> GetOrcamento()
-        {
-          if (_context.Orcamentos == null)
-          {
-              return NotFound();
-          }
-            return await _context.Orcamentos.ToListAsync();
-        }
-
         // GET: api/Orcamentos/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Orcamento>> GetOrcamento(int id)
+        public async Task<ActionResult<OrcamentoDTO>> GetOrcamento(int id)
         {
           if (_context.Orcamentos == null)
           {
               return NotFound();
           }
-            var orcamento = await _context.Orcamentos.FindAsync(id);
+            var orcamento = _context.Orcamentos
+                .Where(x => x.Id == id)
+                .Include(u=> u.Usuario)
+                .FirstOrDefault();
+
 
             if (orcamento == null)
             {
                 return NotFound();
             }
 
-            return orcamento;
+            var pedido = _context.Pedidos
+                .Where(x => x.Id == orcamento.PedidoId)
+                .Include(p => p.TipoServico)
+                .FirstOrDefault();
+
+            if (pedido == null)
+            {
+                return NotFound();
+            }
+
+            return new OrcamentoDTO
+            {
+                Id = orcamento.Id,
+                Pedido = pedido,
+                Status = orcamento.Status,
+                Data = orcamento.Data,
+                ValorOrcamento = orcamento.ValorOrcamento
+                
+            };
         }
 
-        // GET: api/Orcamentos/5
         [HttpGet("usuario/{id}")]
-        public async Task<ActionResult<Orcamento>> GetOrcamentoUsuario(int id)
+        public async Task<ActionResult<IEnumerable<OrcamentoDTO>>> GetOrcamentoUsuario(int id)
         {
             if (_context.Orcamentos == null)
             {
                 return NotFound();
             }
-            var orcamento = await _context.Orcamentos.FindAsync(id);
 
-            if (orcamento == null)
+
+            var orcamentos =  await _context.Orcamentos
+                .Where(x => x.UsuarioId == id)
+                .Include(u => u.Usuario)
+                .ToListAsync();
+
+            if (orcamentos == null)
             {
-                return NotFound();
+                return null;
             }
 
-            return orcamento;
+            var listaDTO = new List<OrcamentoDTO> {  };
+            foreach (var orcamento in orcamentos)
+            {
+                var pedido = _context.Pedidos
+                .Where(x => x.Id == orcamento.PedidoId)
+                .Include(p => p.TipoServico)
+                .FirstOrDefault();
+                listaDTO.Add(new OrcamentoDTO
+                {
+                    Id = orcamento.Id,
+                    Pedido = pedido,
+                    Status = orcamento.Status,
+                    Data = orcamento.Data,
+                    ValorOrcamento = orcamento.ValorOrcamento
+
+                });
+            }
+
+
+            return listaDTO;
         }
 
-        // PUT: api/Orcamentos/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutOrcamento(int id, Orcamento orcamento)
+        public async Task<IActionResult> PutOrcamento(int id, OrcamentoDTO orcamento)
         {
             if (id != orcamento.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(orcamento).State = EntityState.Modified;
+            var orcamentoNovo = _context.Orcamentos
+                .Where(x => x.Id == id)
+                .FirstOrDefault();
+
+
+            if (orcamentoNovo == null)
+            {
+                return NotFound();
+            }
+
+            orcamentoNovo.ValorOrcamento = orcamento.ValorOrcamento;
+
+            _context.Entry(orcamentoNovo).State = EntityState.Modified;
 
             try
             {
@@ -102,40 +148,62 @@ namespace api_contratos_servicos.Controllers
             return NoContent();
         }
 
-        // POST: api/Orcamentos
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Orcamento>> PostOrcamento(Orcamento orcamento)
-        {
-          if (_context.Orcamentos == null)
-          {
-              return Problem("Entity set 'ApplicationDbContext.Orcamentos'  is null.");
-          }
-            _context.Orcamentos.Add(orcamento);
-            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetOrcamento", new { id = orcamento.Id }, orcamento);
-        }
 
-        // DELETE: api/Orcamentos/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOrcamento(int id)
+        [HttpPost("{id}/enviar")]
+        public async Task<IActionResult> EnviarOrcamento(int id)
         {
             if (_context.Orcamentos == null)
             {
                 return NotFound();
             }
-            var orcamento = await _context.Orcamentos.FindAsync(id);
+            var orcamento = _context.Orcamentos
+                .Where(p => p.Id == id)
+                .FirstOrDefault();
+
             if (orcamento == null)
             {
                 return NotFound();
             }
 
-            _context.Orcamentos.Remove(orcamento);
-            await _context.SaveChangesAsync();
+            orcamento.Status = "Orcado";
+
+            var pedido = _context.Pedidos
+                .Where(p => p.Id == orcamento.PedidoId)
+                .FirstOrDefault();
+
+            if (pedido == null)
+            {
+                return NotFound();
+            }
+
+            pedido.Status = "Orcado";
+
+
+            _context.Entry(orcamento).State = EntityState.Modified;
+
+            _context.Entry(pedido).State = EntityState.Modified;
+
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!OrcamentoExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
             return NoContent();
         }
+
 
         private bool OrcamentoExists(int id)
         {

@@ -16,6 +16,8 @@
         public string Cidade { get; set; }
         public string UF { get; set; }
 
+        public ICollection<TipoServico> ListaTipoServicos { get; set; }
+
 
         public UsuarioDTO(string Nome, string Email, string Senha, string tipo,
                           string Cpf, string Cep, string Telefone, string Logradouro, 
@@ -83,6 +85,15 @@
             fornecedor.Cidade = Cidade;
             fornecedor.UF = UF;
             fornecedor.CEP = Cep;
+            var newLista = new List<FornecedorTipoServico>();
+            foreach (TipoServico tipoServicos in ListaTipoServicos)
+            {
+                newLista.Add(new FornecedorTipoServico
+                {
+                    TipoServicoId = tipoServicos.Id
+                });
+            }
+            fornecedor.ListaTipoServico = newLista;
 
             return fornecedor;
         }
