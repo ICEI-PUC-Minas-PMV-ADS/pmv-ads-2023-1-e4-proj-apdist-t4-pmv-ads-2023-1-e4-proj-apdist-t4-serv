@@ -47,4 +47,15 @@ export class PedidoService {
   }
 
 
+  aprovar(id: number): Observable<Pedido> {
+    const url = `${this.apiURL}/${id}/aprovar`
+    return this.http.post<Pedido>(url, null);
+  }
+
+  rejeitar(id: number): Observable<Pedido> {
+    const url = `${this.apiURL}/${id}/rejeitar`
+    return this.http.delete<Pedido>(url);
+  }
+
+
 }

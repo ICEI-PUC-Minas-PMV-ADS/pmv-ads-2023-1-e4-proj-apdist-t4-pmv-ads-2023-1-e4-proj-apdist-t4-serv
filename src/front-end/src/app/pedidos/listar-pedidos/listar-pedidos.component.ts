@@ -43,15 +43,21 @@ export class ListarPedidosComponent {
           this.ngOnInit();
         });
       }
-      if(this.acao === 'cancelar'){
-        this.pedidoService.cancelar(this.pedidoSelecionado.id).subscribe(()=>{
-          console.log("cancelou");
-          this.ngOnInit();
-        });
-      }
       if(this.acao === 'enviar'){
         this.pedidoService.enviar(this.pedidoSelecionado.id).subscribe(()=>{
           console.log("enviou");
+          this.ngOnInit();
+        });
+      }
+      if(this.acao === 'aprovar'){
+        this.pedidoService.aprovar(this.pedidoSelecionado.id).subscribe(()=>{
+          console.log("aprovou");
+          this.ngOnInit();
+        });
+      }
+      if(this.acao === 'rejeitar'){
+        this.pedidoService.rejeitar(this.pedidoSelecionado.id).subscribe(()=>{
+          console.log("rejeitou");
           this.ngOnInit();
         });
       }

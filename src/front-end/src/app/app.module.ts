@@ -15,6 +15,7 @@ import { TokenInterceptor } from './token.interceptor';
 import { NgxMaskModule } from "ngx-mask";
 import { PrincipalComponent } from './principal/principal.component';
 import { PedidosModule } from './pedidos/pedidos.module';
+import { OrcamentosModule } from './orcamentos/orcamentos.module';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PedidosModule } from './pedidos/pedidos.module';
     FormsModule,
     NgxMaskModule.forRoot(),
     PedidosModule,
+    OrcamentosModule,
     AppRoutingModule,
     TemplateModule
   ],

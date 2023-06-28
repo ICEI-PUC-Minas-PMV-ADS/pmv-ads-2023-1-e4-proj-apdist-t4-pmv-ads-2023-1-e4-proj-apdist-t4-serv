@@ -1,7 +1,9 @@
 <section class="container">
   <header class="header">
-    <h2>Meus Pedidos</h2>
-    <button type="button" class="btn btn-primary" routerLink="/pedidos/novo">Novo Pedido</button>
+    <div class="d-grid gap-2 d-md-flex d-flex justify-content-between">
+      <h2>Meus Pedidos</h2>
+      <button type="button" class="btn btn-primary" routerLink="/pedidos/novo">Novo Pedido</button>
+    </div>
   </header>
 
   <table class="table align-middle mb-0 bg-white">
@@ -50,24 +52,25 @@
           </div>
           <div *ngIf="pedido.status=='Novo'">
             <button type="button" class="btn btn-primary btn-floating" (click)="prepararPedidoParaAcao(pedido,'enviar')"
-            data-bs-toggle="modal" data-bs-target="#acaoModal">
+              data-bs-toggle="modal" data-bs-target="#acaoModal">
               <i class="fas fa-paper-plane"></i>
             </button>
-            <button type="button" class="btn btn-warning btn-floating ms-1" routerLink="/pedidos/editar/{{ pedido.id }}">
+            <button type="button" class="btn btn-warning btn-floating ms-1"
+              routerLink="/pedidos/editar/{{ pedido.id }}">
               <i class="fas fa-pen"></i>
             </button>
-            <button type="button" class="btn btn-danger btn-floating ms-1" (click)="prepararPedidoParaAcao(pedido,'cancelar')"
-            data-bs-toggle="modal" data-bs-target="#acaoModal">
+            <button type="button" class="btn btn-danger btn-floating ms-1"
+              (click)="prepararPedidoParaAcao(pedido,'cancelar')" data-bs-toggle="modal" data-bs-target="#acaoModal">
               <i class="fas fa-trash"></i>
             </button>
           </div>
           <div *ngIf="pedido.status=='Orcado'">
-            <button type="button" class="btn btn-success btn-floating" (click)="prepararPedidoParaAcao(pedido,'aprovar')"
-            data-bs-toggle="modal" data-bs-target="#acaoModal">
+            <button type="button" class="btn btn-success btn-floating"
+              (click)="prepararPedidoParaAcao(pedido,'aprovar')" data-bs-toggle="modal" data-bs-target="#acaoModal">
               <i class="fas fa-thumbs-up"></i>
             </button>
-            <button type="button" class="btn btn-danger btn-floating ms-1" (click)="prepararPedidoParaAcao(pedido,'rejeitar')"
-            data-bs-toggle="modal" data-bs-target="#acaoModal">
+            <button type="button" class="btn btn-danger btn-floating ms-1"
+              (click)="prepararPedidoParaAcao(pedido,'rejeitar')" data-bs-toggle="modal" data-bs-target="#acaoModal">
               <i class="fas fa-thumbs-down"></i>
             </button>
           </div>
@@ -90,10 +93,11 @@
         <div class="col mb-3">
           <label for="recipient-name" class="col-form-label"><b>Pedido No.:</b> {{ pedidoSelecionado.id }}</label>
           <br>
-          <label for="message-text" class="col-form-label"><b>Tipo de Serviço:</b> {{ pedidoSelecionado.tipoServico.descricaoServico }}</label>
+          <label for="message-text" class="col-form-label"><b>Tipo de Serviço:</b> {{
+            pedidoSelecionado.tipoServico.descricaoServico }}</label>
         </div>
         <div class="mb-3">
-          
+
         </div>
         <div class="mb-3">
           <p class="conteudo">{{ pedidoSelecionado.descricao }}</p>
@@ -101,7 +105,8 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="acaoModal()">{{ tituloBotaoModal }}</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="acaoModal()">{{ tituloBotaoModal
+          }}</button>
       </div>
     </div>
   </div>

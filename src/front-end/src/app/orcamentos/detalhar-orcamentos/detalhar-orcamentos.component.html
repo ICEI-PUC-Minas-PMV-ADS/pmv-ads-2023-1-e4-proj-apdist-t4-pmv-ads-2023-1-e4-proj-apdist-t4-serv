@@ -1,0 +1,32 @@
+<section class="container">
+  <header class="header">
+    <h2>Orcamento {{ orcamento.id ? '# '+ orcamento.id : '' }} </h2>
+  </header>
+
+  <form>
+    <div class="col-md-12 col-lg-12 col-xl-12 offset-xl-1">
+      <div class="mb-3">
+        <label class="label" for="form2">Tipo de Serviço: <b>{{ orcamento.pedido.tipoServico.descricaoServico }}</b></label>
+      </div>
+      <div class="mb-3">
+        <label for="descricaoServico" class="form-label">Descrição</label>
+        <textarea readonly [(ngModel)]="orcamento.pedido.descricao" class="form-control" name="descricaoServico"
+          rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="valorOrcamento" class="form-label">Valor Orçamento</label>
+        <input [(ngModel)]="orcamento.valorOrcamento" type="text" class="form-control" name ="valorOrcamento">
+      </div>
+
+
+
+      <button (click)="salvarOrcamento()" type="button" class="btn btn-success btn-lg ms-2">Salvar</button>
+      <button (click)="cancelarOrcamento()" type="button" class="btn btn-danger btn-lg ms-2">Cancelar</button>
+
+      <!--
+      <button (click)="criarPensamento()" class="botao">Salvar</button>
+      <button (click)="cancelarPensamento()" class="botao">Cancelar</button>
+-->
+    </div>
+  </form>
+</section>

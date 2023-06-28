@@ -49,6 +49,15 @@ export class AuthService {
     return 0;
   }
 
+  getRole(): string{
+    const token = this.obterToken();
+    if (token) {
+      const role: string = this.jwtHelper.decodeToken(token).role;
+      return role;
+    }
+    return '';
+  }
+
   isAutheticated(): boolean{
     const token = this.obterToken();
     if (token) {

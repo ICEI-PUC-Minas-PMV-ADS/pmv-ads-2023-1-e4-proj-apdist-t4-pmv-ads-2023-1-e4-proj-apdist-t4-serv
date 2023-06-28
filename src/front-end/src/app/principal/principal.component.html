@@ -1,1 +1,8 @@
-<app-listar-pedidos></app-listar-pedidos>
+<div *ngIf="role=='cliente', else orcamentos">
+  <app-listar-pedidos></app-listar-pedidos>
+</div>
+<ng-template #orcamentos>
+<div>
+  <app-listar-orcamentos></app-listar-orcamentos>
+</div>
+</ng-template>
