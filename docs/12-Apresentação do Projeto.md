@@ -20,12 +20,12 @@ O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do conte
 ## Conjunto de Slides (Estrutura)
 Vídeo de apresentação:
 
-> - [Vídeo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e4-proj-apdist-t4-pmv-ads-2023-1-e4-proj-apdist-t4-serv/tree/main/presentation/video_apresentacao.mp4)
+> - [Vídeo](https://drive.google.com/file/d/1DSakB9dPwwhslV8F--uJ6FWMHEllf8K5/view?usp=sharing)
 
 	
 	
 Apresentação em PowerPoint:
 
-> - [Apresentação](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e4-proj-apdist-t4-pmv-ads-2023-1-e4-proj-apdist-t4-serv/tree/main/presentation/apresentacao_projeto.pptx)
+> - [Apresentação](https://docs.google.com/presentation/d/1ebvhhWTpvxZ3S5GQ6MosHBbeW3YfspPy/edit?usp=sharing&ouid=116414430137719689060&rtpof=true&sd=true)
 	
 	
